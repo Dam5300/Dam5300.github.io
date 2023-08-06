@@ -7,7 +7,7 @@
 			"c": "Nessuna, poichè darà errore in compilazione",
 			"d": "Nessuna delle precedenti."
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"category": "Quiz1.1"
 	},
 	{
