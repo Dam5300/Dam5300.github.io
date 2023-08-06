@@ -18,7 +18,7 @@
 			"c": "bool -> char; bool -> int; bool -> double",
 			"d": "double -> int; bool -> int; char -> bool"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c","d"],
 		"category": "Quiz1.1"
 	},
 	{
