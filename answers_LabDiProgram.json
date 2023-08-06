@@ -30,7 +30,7 @@
 			"d": "myString"
 		},
 		"correctAnswer": "d",
-		"category": "Teoria"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Quale file di header consente di utilizzare oggetti per la gestione di input e output?",
@@ -41,7 +41,7 @@
 			"d": "#include <inputstr>"
 		},
 		"correctAnswer": "b",
-		"category": "Algebra Relazionale"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Qual'è la sintassi corretta per stampare in poutput \"Hello Word\" in C++?",
@@ -52,7 +52,7 @@
 			"d": "Console.WriteLine(\"Hello Word\")"
 		},
 		"correctAnswer": "d",
-		"category": "Algebra Relazionale"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Come si crea una variabile che contenga il numero 2.8 ?",
@@ -63,7 +63,7 @@
 			"d": "double x {2.8};"
 		},
 		"correctAnswer": "b",
-		"category": "Schema Relazionale"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Da dove inizia l'esecuzione di un programma C++?",
@@ -74,7 +74,7 @@
 			"d": "dalla funzione else"
 		},
 		"correctAnswer": "b",
-		"category": "SQL"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Se l'attributo A assume valore nullo, allora la condizione di selezione <b>A IS NOT NULL</b>:",
@@ -85,7 +85,7 @@
 			"d": "Non assume un valore definito."
 		},
 		"correctAnswer": "b",
-		"category": "SQL"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Quali dei seguenti rapprenstano un tipo di identificatore valido in C++?",
@@ -96,7 +96,7 @@
 			"d": "$var_name"
 		},
 		"correctAnswer": "c",
-		"category": "Algebra Relazionale"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Chi ha creato il linguaggio C++",
@@ -107,7 +107,7 @@
 			"d": "Brian Kernighan"
 		},
 		"correctAnswer": "c",
-		"category": "Dipendenze Funzionali"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "Quale delle seguenti rappresenta la corretta sequenza per il processo di compilazione?",
@@ -118,7 +118,7 @@
 			"d": "Nessuna delle precedenti."
 		},
 		"correctAnswer": "c",
-		"category": "Algebra Relazionale"
+		"category": "Quiz1.1"
 	},
 	{
 		"question": "L'attività di progettazione di una base di dati consiste essenzialmente in:",
