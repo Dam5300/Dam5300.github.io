@@ -8,7 +8,7 @@
 			"d": "Nessuna delle precedenti."
 		},
 		"correctAnswer": "d",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Quali delle seguenti conversioni sono sicure?",
@@ -19,7 +19,7 @@
 			"d": "double -> int; bool -> int; char -> bool"
 		},
 		"correctAnswer": ["c","d"],
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Quale tipo di dato è usato per creare una variabile che deve contenere del testo?",
@@ -30,7 +30,7 @@
 			"d": "myString"
 		},
 		"correctAnswer": "b",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Quale file di header consente di utilizzare oggetti per la gestione di input e output?",
@@ -42,7 +42,7 @@
 
 		},
 		"correctAnswer": "b",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Qual'è la sintassi corretta per stampare in poutput \"Hello Word\" in C++?",
@@ -53,7 +53,7 @@
 			"d": "Console.WriteLine(\"Hello Word\")"
 		},
 		"correctAnswer": "c",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Come si crea una variabile che contenga il numero 2.8 ?",
@@ -64,7 +64,7 @@
 			"d": "double x {2.8};"
 		},
 		"correctAnswer": ["a","d"],
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Da dove inizia l'esecuzione di un programma C++?",
@@ -75,7 +75,7 @@
 			"d": "dalla funzione else"
 		},
 		"correctAnswer": "b",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Quali dei seguenti rapprenstano un tipo di identificatore valido in C++?",
@@ -86,7 +86,7 @@
 			"d": "$var_name"
 		},
 		"correctAnswer": "c",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Chi ha creato il linguaggio C++",
@@ -97,7 +97,7 @@
 			"d": "Brian Kernighan"
 		},
 		"correctAnswer": "a",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Quale delle seguenti rappresenta la corretta sequenza per il processo di compilazione?",
@@ -108,7 +108,7 @@
 			"d": "Nessuna delle precedenti."
 		},
 		"correctAnswer": "c",
-		"category": "Quiz1.1. - Variabili e Tipi"
+		"category": "Variabili e Tipi"
 	},
 	{
 		"question": "Qual'è l'output del seguente programma? <br><img src='imgLdP/img1.PNG' style='max-width: 100%; height: auto;' alt='Immagine 4.webp'><br> ",
@@ -131,7 +131,7 @@
 			"d": "constexpr non è un comando di C++"
 		},
 		"correctAnswer": "b",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Qual'è l'output del seguente programma ? <br><img src='imgLdP/img2.PNG' class='responsive-img' alt='Immagine img2.PNG'>",
@@ -142,7 +142,7 @@
 			"d": "Errore"
 		},
 		"correctAnswer": "d",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Quali delle seguenti espressioni contengono una dichiarazione che non è una definizione?",
@@ -154,7 +154,7 @@
 			"e": "int add (int a, int b) { return a+b; }"
 		},
 		"correctAnswer": "d",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Nella progettazione di uno schema ER, se un concetto ha proprietà significative e/o descrive classi di oggetti con esistenza autonoma, è opportuno rappresentarlo con:",
@@ -165,7 +165,7 @@
 			"d": "Una generalizzazione."
 		},
 		"correctAnswer": "c",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Qual'è la differenza fra [#define MAX 20] e [const int MAX = 20] in C++?",
@@ -176,7 +176,7 @@
 			"d": "#define non è una keyword di C++ ma solo in C"
 		},
 		"correctAnswer": "c",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Dopo la dichiarazione [ const in N = 5], quali delle seguenti operazioni non sono consentite?",
@@ -187,7 +187,7 @@
 			"d": "Nessuna delle precedenti"
 		},
 		"correctAnswer": "c",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Qual'è l'output del seguente programma ? <br><img src='imgLdP/img3.PNG' class='responsive-img' alt='Immagine img3.PNG'>",
@@ -198,7 +198,7 @@
 			"d": "Errore"
 		},
 		"correctAnswer": "d",
-		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
+		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "L'istruzione di SQL standard <pre style='text-align:left'> SELECT * FROM PERSONA_1<br> UNION<br> SELECT * FROM PERSONA_2;</pre> applicata alle tabelle<br>PERSONA_1<br> <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th>Nome</th> <th>Cognome</th> </tr> <tr> <td>Aldo</td> <td>Bianchi</td> </tr> </tbody> </table></div>PERSONA_2<br> <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th>Nome</th> <th>Cognome</th> </tr> <tr> <td>Aldo</td> <td>Bianchi</td> </tr> </tbody> </table></div> restituisce una tabella con:",
