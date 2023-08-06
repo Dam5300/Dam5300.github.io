@@ -8,7 +8,7 @@
 			"d": "Nessuna delle precedenti."
 		},
 		"correctAnswer": "d",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Quali delle seguenti conversioni sono sicure?",
@@ -19,7 +19,7 @@
 			"d": "double -> int; bool -> int; char -> bool"
 		},
 		"correctAnswer": ["c","d"],
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Quale tipo di dato è usato per creare una variabile che deve contenere del testo?",
@@ -30,7 +30,7 @@
 			"d": "myString"
 		},
 		"correctAnswer": "b",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Quale file di header consente di utilizzare oggetti per la gestione di input e output?",
@@ -42,7 +42,7 @@
 
 		},
 		"correctAnswer": "b",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Qual'è la sintassi corretta per stampare in poutput \"Hello Word\" in C++?",
@@ -53,7 +53,7 @@
 			"d": "Console.WriteLine(\"Hello Word\")"
 		},
 		"correctAnswer": "c",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Come si crea una variabile che contenga il numero 2.8 ?",
@@ -64,7 +64,7 @@
 			"d": "double x {2.8};"
 		},
 		"correctAnswer": ["a","d"],
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Da dove inizia l'esecuzione di un programma C++?",
@@ -75,7 +75,7 @@
 			"d": "dalla funzione else"
 		},
 		"correctAnswer": "b",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Quali dei seguenti rapprenstano un tipo di identificatore valido in C++?",
@@ -86,7 +86,7 @@
 			"d": "$var_name"
 		},
 		"correctAnswer": "c",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Chi ha creato il linguaggio C++",
@@ -97,7 +97,7 @@
 			"d": "Brian Kernighan"
 		},
 		"correctAnswer": "a",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
 		"question": "Quale delle seguenti rappresenta la corretta sequenza per il processo di compilazione?",
@@ -108,10 +108,10 @@
 			"d": "Nessuna delle precedenti."
 		},
 		"correctAnswer": "c",
-		"category": "Quiz1.1"
+		"category": "Quiz1.1. - Variabili e Tipi"
 	},
 	{
-		"question": "L'attività di progettazione di una base di dati consiste essenzialmente in:",
+		"question": "Qual'è l'output del seguente programma? <br><img src='imgLdP/img1.PNG' style='max-width: 100%; height: auto;' alt='Immagine 4.webp'><br> ",
 		"answers": {
 			"a": "Definire struttura e caratteristiche proprie di una collezione di dati.",
 			"b": "Progettare un DBMS.",
