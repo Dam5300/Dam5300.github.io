@@ -29,7 +29,7 @@
 			"c": "String",
 			"d": "myString"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": "b",
 		"category": "Quiz1.1"
 	},
 	{
@@ -51,7 +51,7 @@
 			"c": "std::cout<<\"Hello Word\"",
 			"d": "Console.WriteLine(\"Hello Word\")"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": "c",
 		"category": "Quiz1.1"
 	},
 	{
@@ -62,7 +62,7 @@
 			"c": "x = 2.8;",
 			"d": "double x {2.8};"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["a","d"],
 		"category": "Quiz1.1"
 	},
 	{
@@ -72,17 +72,6 @@
 			"b": "dalla funzione main",
 			"c": "dalla funzione void",
 			"d": "dalla funzione else"
-		},
-		"correctAnswer": "b",
-		"category": "Quiz1.1"
-	},
-	{
-		"question": "Se l'attributo A assume valore nullo, allora la condizione di selezione <b>A IS NOT NULL</b>:",
-		"answers": {
-			"a": "Assume valore True.",
-			"b": "Assume valore False.",
-			"c": "Assume valore Unknown.",
-			"d": "Non assume un valore definito."
 		},
 		"correctAnswer": "b",
 		"category": "Quiz1.1"
@@ -106,7 +95,7 @@
 			"c": "Linus Torvalds",
 			"d": "Brian Kernighan"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": "a",
 		"category": "Quiz1.1"
 	},
 	{
