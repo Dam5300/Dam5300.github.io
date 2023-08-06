@@ -35,10 +35,11 @@
 	{
 		"question": "Quale file di header consente di utilizzare oggetti per la gestione di input e output?",
 		"answers": {
-			"a": "#include '&lt;'stream'&gt;'",
-			"b": "#include <iostream>",
-			"c": "#include <iosstring>",
-			"d": "#include <inputstr>"
+			"a": "#include &lt;stream&gt;",
+			"b": "#include &lt;iostream&gt;",
+			"c": "#include &lt;iosstring&gt;",
+			"d": "#include &lt;inputstr&gt;"
+
 		},
 		"correctAnswer": "b",
 		"category": "Quiz1.1"
