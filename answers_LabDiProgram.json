@@ -119,41 +119,42 @@
 			"d": "1 1 <br> 2 4 <br> 1 1 <br> 1 1 <br> 2 4 ",
 			"e": "Errore"
 		},
-		"correctAnswer": "a",
-		"category": "Teoria"
+		"correctAnswer": "c",
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
-		"question": "Si consideri lo schema ER della figura seguente:<br><br><img src='img/2.webp' style='max-width: 100%; height: auto;' alt='Immagine 2.webp'/></br>Il fatto che non siano specificate le cardinalità degli attributi A1 e A2 sta ad indicare che:",
+		"question": "Qual'è la differenza fra  [constexpr int] e [const int] in C++?",
 		"answers": {
-			"a": "I due attributi possono avere cardinalità qualsiasi.",
-			"b": "A1 ha cardinalità implicita (1,1), A2 può avere cardinalità (0,1) oppure (1,1).",
-			"c": "Entrambi gli attributi hanno cardinalità implicita (1,1). ",
-			"d": "Lo schema è errato: le cardinalità degli attributi vanno sempre specificate esplicitamente."
+			"a": "Sono equivalenti",
+			"b": "Il primo è noto durante la compilazione, il secondo solo in esecuzione",
+			"c": "Il secondo è noto durante la compilazione, il primo solo in esecuzione",
+			"d": "constexpr non è un comando di C++"
 		},
-		"correctAnswer": "c",
-		"category": "Entità-Relazione"
+		"correctAnswer": "b",
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
-		"question": "Dal solo punto di vista sintattico, ossia del corretto uso formale dei costrutti del modello ER, lo schema ER della figura seguente:<br><img src='img/3.webp' class='responsive-img' alt='Immagine 3.webp'>",
+		"question": "Qual'è l'output del seguente programma ? <br><img src='imgLdP/img2.PNG' class='responsive-img' alt='Immagine img2.PNG'>",
 		"answers": {
-			"a": "Può essere corretto o errato, a seconda della realtà che si intende rappresentare.",
-			"b": "Può essere corretto o errato: non abbiamo sufficienti elementi per rispondere.",
-			"c": "È sicuramente errato.",
-			"d": "È sicuramente corretto."
+			"a": "5",
+			"b": "7",
+			"c": "57",
+			"d": "Errore"
 		},
-		"correctAnswer": "c",
-		"category": "Entità-Relazione"
+		"correctAnswer": "d",
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
-		"question": "Gli strumenti della teoria della normalizzazione consentono di rilevare:",
+		"question": "Quali delle seguenti espressioni contengono una dichiarazione che non è una definizione?",
 		"answers": {
-			"a": "Errata definizione delle chiavi esterne.",
-			"b": "Scelta inadeguata della chiave primaria.",
-			"c": "Possibile ridondanza nelle tuple.",
-			"d": "Scelta inadeguata del nome dello schema di relazione."
+			"a": "int a = 7",
+			"b": "extern int a",
+			"c": "vector<char> v",
+			"d": "double sqrt(double)",
+			"e": "int add (int a, int b) { return a+b; }"
 		},
-		"correctAnswer": "c",
-		"category": "Normalizzazione"
+		"correctAnswer": "d",
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "Nella progettazione di uno schema ER, se un concetto ha proprietà significative e/o descrive classi di oggetti con esistenza autonoma, è opportuno rappresentarlo con:",
@@ -164,40 +165,40 @@
 			"d": "Una generalizzazione."
 		},
 		"correctAnswer": "c",
-		"category": "Entità-Relazione"
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
-		"question": "Se nella progettazione di uno schema ER si individuano solo alcuni concetti importanti e poi si procede, a partire da questi, a <b>macchia d'olio</b>, si sta utilizzando una strategia di progettazione:",
+		"question": "Qual'è la differenza fra [#define MAX 20] e [const int MAX = 20] in C++?",
 		"answers": {
-			"a": "Top-down.",
-			"b": "Bottom-up.",
-			"c": "Inside-out.",
-			"d": "Mista."
+			"a": "Sono equivalenti",
+			"b": "Il primo è preferibile perchè non ha tipo",
+			"c": "Il secondo è preferibile perchè ha un tipo",
+			"d": "#define non è una keyword di C++ ma solo in C"
 		},
 		"correctAnswer": "c",
-		"category": "Teoria"
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
-		"question": "Quale di questi non è un passo di ristrutturazione di uno schema ER?",
+		"question": "Dopo la dichiarazione [ const in N = 5], quali delle seguenti operazioni non sono consentite?",
 		"answers": {
-			"a": "Analisi delle ridondanze.",
-			"b": "Eliminazione delle generalizzazioni.",
-			"c": "Rielaborazione dello schema in presenza di nuovi requisiti.",
-			"d": "Scelta degli identificatori."
+			"a": "std::cout << N",
+			"b": "if(N == i + 3)",
+			"c": "std::cin >> N",
+			"d": "Nessuna delle precedenti"
 		},
 		"correctAnswer": "c",
-		"category": "Entità-Relazione"
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
-		"question": "La migliore traduzione possibile dello schema ER ristrutturato della figura seguente<br><img src='img/4.webp' style='max-width: 100%; height: auto;' alt='Immagine 4.webp'><br> verso il modello logico relazionale porta agli schemi di relazione:",
+		"question": "Qual'è l'output del seguente programma ? <br><img src='imgLdP/img3.PNG' class='responsive-img' alt='Immagine img3.PNG'>",
 		"answers": {
-			"a": "E1(<u>A11</u>,A12) e E2(<u>A21</u>,A22).",
-			"b": "E1(<u>A11</u>,A12,A21) e E2(<u>A21</u>,A22).",
-			"c": "E1(<u>A11</u>,A12), E2(<u>A21</u>,A22) e R(<u>A11</u>,<u>A21</u>).",
-			"d": "E1(<u>A11</u>,A12), E2(<u>A21</u>,A22) e R(A11,A21)."
+			"a": "5",
+			"b": "6",
+			"c": "Niente",
+			"d": "Errore"
 		},
-		"correctAnswer": "c",
-		"category": "Schema Relazionale"
+		"correctAnswer": "d",
+		"category": "Quiz2.1 - Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
 	{
 		"question": "L'istruzione di SQL standard <pre style='text-align:left'> SELECT * FROM PERSONA_1<br> UNION<br> SELECT * FROM PERSONA_2;</pre> applicata alle tabelle<br>PERSONA_1<br> <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th>Nome</th> <th>Cognome</th> </tr> <tr> <td>Aldo</td> <td>Bianchi</td> </tr> </tbody> </table></div>PERSONA_2<br> <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th>Nome</th> <th>Cognome</th> </tr> <tr> <td>Aldo</td> <td>Bianchi</td> </tr> </tbody> </table></div> restituisce una tabella con:",
