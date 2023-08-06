@@ -97,8 +97,8 @@
             let radios = "";
 
             Object.keys(element.answers).forEach(e => {
-                let correct = (Array.isArray(element.correctAnswer) && element.correctAnswer.includes(e)) ? "&emsp;&#10004;" : "";
-                let answer = (Array.isArray(element.correctAnswer) && element.correctAnswer.includes(e)) ? "<b>" + element.answers[e] + "</b>" : element.answers[e];
+                let correct = (Array.isArray(element.correctAnswer) ? element.correctAnswer.includes(e) : e === element.correctAnswer) ? "&emsp;&#10004;" : "";
+                let answer = (Array.isArray(element.correctAnswer) ? element.correctAnswer.includes(e) : e === element.correctAnswer) ? "<b>" + element.answers[e] + "</b>" : element.answers[e];
                 radios += "<ul>" +
                 "<li id='" + (n + e) + "'>" + answer + correct + "</li>" +
                 "</ul>";
@@ -114,6 +114,7 @@
                 "</div>";
             });
         });
+
 
 
 	</script>
