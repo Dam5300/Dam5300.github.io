@@ -113,10 +113,11 @@
 	{
 		"question": "Qual'è l'output del seguente programma? <br><img src='imgLdP/img1.PNG' style='max-width: 100%; height: auto;' alt='Immagine 4.webp'><br> ",
 		"answers": {
-			"a": "Definire struttura e caratteristiche proprie di una collezione di dati.",
-			"b": "Progettare un DBMS.",
-			"c": "Elencare tutte le istanze possibili di una collezione di dati.",
-			"d": "Progettare un sistema software in grado di gestire collezioni di dati grandi, condivise e persistenti."
+			"a": "1 2 <br> 2 4 <br> 1 2 <br> 2 4 <br> 1 2 <br> 2 4",
+			"b": "1 1 <br> 2 4 <br> 1 1 <br> 2 4 <br> 1 1 <br> 2 4",
+			"c": "1 1 <br> 2 4 <br> 1 1 <br> 2 4 <br> 1 1 ",
+			"d": "1 1 <br> 2 4 <br> 1 1 <br> 1 1 <br> 2 4 ",
+			"e": "Errore"
 		},
 		"correctAnswer": "a",
 		"category": "Teoria"
