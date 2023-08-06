@@ -87,30 +87,34 @@
 
 		quiz = document.getElementById("quiz")
 
-		fetch("answers_LabDiProgram.json").then(res=>res.json()).then(data=>{
-			let n=0
-			
-			data.forEach(element=>{
-				n++
-				let radios=""
-				Object.keys(element.answers).forEach(e=>{
-						let correct = (e==element.correctAnswer)? "&emsp;&#10004":""
-						let answer = (e==element.correctAnswer)? "<b>"+element.answers[e]+"</b>":element.answers[e]
-						radios+="<ul>"+
-									"<li id='"+(n+e)+"'>"+answer+correct+"</li>"+
-								"</ul>"
-					})
+        fetch("answers_LabDiProgram.json")
+        .then(res => res.json())
+        .then(data => {
+            let n = 0;
 
-			
-				quiz.innerHTML+="<div class='card text-center shadow-sm' style='margin-top:2em'>"+
-						"<div class='card-header'>Domanda "+n+"</div>"+
-						"<div class='card-body'>"+
-							"<h6 class='card-title' style='margin-bottom: 1.8em; line-height:2em'>"+element.question+"</h6>"+
-								"<div class='card-text' style='text-align:left'>"+radios+"</div>"+
-						"</div>"+	
-						"<div class='card-footer text-muted'>Categoria: "+element.category+"</div>"
-			})
-		})
+            data.forEach(element => {
+            n++;
+            let radios = "";
+
+            Object.keys(element.answers).forEach(e => {
+                let correct = (Array.isArray(element.correctAnswer) && element.correctAnswer.includes(e)) ? "&emsp;&#10004;" : "";
+                let answer = (Array.isArray(element.correctAnswer) && element.correctAnswer.includes(e)) ? "<b>" + element.answers[e] + "</b>" : element.answers[e];
+                radios += "<ul>" +
+                "<li id='" + (n + e) + "'>" + answer + correct + "</li>" +
+                "</ul>";
+            });
+
+            quiz.innerHTML += "<div class='card text-center shadow-sm' style='margin-top:2em'>" +
+                "<div class='card-header'>Domanda " + n + "</div>" +
+                "<div class='card-body'>" +
+                "<h6 class='card-title' style='margin-bottom: 1.8em; line-height:2em'>" + element.question + "</h6>" +
+                "<div class='card-text' style='text-align:left'>" + radios + "</div>" +
+                "</div>" +
+                "<div class='card-footer text-muted'>Categoria: " + element.category + "</div>" +
+                "</div>";
+            });
+        });
+
 
 	</script>
 
