@@ -20,7 +20,7 @@
 			"d": "double -> int; bool -> int; char -> bool"
 		},
 		"correctAnswer": ["c","d"],
-		"reason":"",
+		"reason":" ",
 		"category": "Variabili e Tipi"
 	},
 	{
