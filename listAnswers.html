@@ -52,7 +52,7 @@
         </ul>
     </div>
 
-	<h3 style="text-align:center; margin-top:2em">Tutte le risposte di: </br>Quiz Laboratorio di Programmazione</h3>
+	<h3 style="text-align:center; margin-top:2em">Tutte le risposte di: <br> Quiz Laboratorio di Programmazione</h3>
 
     
 	<div style="text-align:center; margin-top:1em">
@@ -110,7 +110,7 @@
                 "<h6 class='card-title' style='margin-bottom: 1.8em; line-height:2em'>" + element.question + "</h6>" +
                 "<div class='card-text' style='text-align:left'>" + radios + "</div>" +
 
-                "<div class='card-footer text-muted'>" + (element.reason != "undefined" ? "Motivazione:" + element.reason : "" )+ "</div>"+
+                (element.reason != "" ? "<div class='card-footer text-muted'>Motivazione:" + element.reason : "" )+ "</div>"+
                     
                 "<div class='card-footer text-muted'>Categoria: " + element.category + "</div>" +
                 "</div>";
