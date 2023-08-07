@@ -231,65 +231,67 @@
 		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Il modello di dati Entità-Associazione (Entity-Relationship):",
+		"question": "Qauli delle seguenti affermazioni sono vere riguardo la dichiarazione della funzione [int foo(int y, int x = 4)] ?",
 		"answers": {
-			"a": "Non è né un modello fisico, né un modello logico, né un modello concettuale.",
-			"b": "È un modello fisico.",
-			"c": "È un modello logico.",
-			"d": "È un modello concettuale."
+			"a": "foo restituisce la viariabile y modificata",
+			"b": "x ha valore costante pari a 4",
+			"c": "foo restituisce un intero",
+			"d": "se x non è definita, assume valore 4",
+			"e": "foo può non resituire nulla",
+			"f": "y è passata per valore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["c", "d"],
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "L'indipendenza fisica dei dati:",
+		"question": "cHE COS'è LO \"SCOPE\" in un programma ?",
 		"answers": {
-			"a": "Consente di modificare lo schema fisico senza che ciò comporti necessariamente una modifica dello schema logico.",
-			"b": "Consente di modificare lo schema logico senza che ciò comporti necessariamente una modifica degli schemi esterni",
-			"c": "Consente di modificare i dati a livello fisico senza che ciò comporti necessariamente una modifica dei dati a livello logico.",
-			"d": "Consente di modificare i dati a livello logico senza che ciò comporti necessariamente una modifica dei dati a livello esterno."
+			"a": "una regione di testo ",
+			"b": "un insieme di variabili",
+			"c": "uno strumento di debugging",
+			"d": "l'insieme di tutte le dichiarazioni delle funzioni"
 		},
 		"correctAnswer": "a",
 		"reason":"",
-		"category": "Teoria"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Sia $R(X)$ uno schema di relazione e r una sua generica istanza. È possibile che r presenti tuple duplicate?",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img4.PNG' class='responsive-img' alt='Immagine img4.PNG'>",
 		"answers": {
-			"a": "No",
-			"b": "Sì",
-			"c": "Solo se su R non è definita una chiave primaria.",
-			"d": "Solo se l'insieme di attributi di R non costituisce superchiave di R."
+			"a": "10",
+			"b": "5",
+			"c": "Errore",
+			"d": "105"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": "c",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Header, scope e namespace"
 	},
 
 	{
-		"question": "La seguente relazione:<br><div class='table-responsive'><table class='table table-bordered'><tbody><tr><td colspan=\"4\" style=\"text-align:center\"><b>PARTITA<b/></td></tr><tr><th>SquadraCasa</th><th>SquadraOspite</th><th>Risultato</th></tr><tr><td>Juventus</td><td>Inter</td><td>1-1</td></tr><tr><td>Milan</td><td>Torino</td><td>0-0</td></tr></tbody></table></div>",
+		"question": "Qual'è lo scope di una variabile dichiarata all'interno di una funzione definita dall'utente?",
 		"answers": {
-			"a": "Ha cardinalità 2 e grado 3.",
-			"b": "Ha cardinalità 3 e grado 2.",
-			"c": "Ha cardinalità 2 e grado 2.",
-			"d": "Ha cardinalità 3 e grado 3."
+			"a": "L'intero programma",
+			"b": "Il corpo della funzione",
+			"c": "La funzione main",
+			"d": "La sezione dell'header"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": "b",
 		"reason":"",
-		"category": "SQL"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "I vincoli basati sullo schema sono di solito specificati:",
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img5.PNG' class='responsive-img' alt='Immagine img5.PNG'>",
 		"answers": {
-			"a": "Tramite comandi di Data Definition Language (DDL).",
-			"b": "Tramite comandi di Data Manipulation Language (DML).",
-			"c": "Sia tramite comandi di DDL, che tramite comandi DML.",
-			"d": "Né tramite comandi DDL, né tramite comandi DML"
+			"a": "11",
+			"b": "01",
+			"c": "00",
+			"d": "10"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": "d",
 		"reason":"",
-		"category": "SQL"
+		"category": "Header, scope e namespace"
 	},
 	{
 		"question": "Sia R(A1, A2, A3, A4) uno schema di relazione. Se {A1, A2, A3} è una superchiave di R, allora {A1, A2}: ",
