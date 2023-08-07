@@ -35,6 +35,13 @@
                 margin-bottom: 3em;
             }
         }
+
+        .reason_style {
+            font-size: 0.8em;
+            font-style: italic;
+            color: #b3b3b3;
+        }
+
     </style>
 
 
@@ -110,7 +117,7 @@
                 "<h6 class='card-title' style='margin-bottom: 1.8em; line-height:2em'>" + element.question + "</h6>" +
                 "<div class='card-text' style='text-align:left'>" + radios + "</div>" +
 
-                (element.reason != "" ? "<div class='font-weight-light text-muted'>Motivazione:" + element.reason : "" )+ "</div>"+
+                (element.reason != "" ? "<div class='reason_style text-muted'>Motivazione:" + element.reason + "<br>" : "" )+ "</div>"+
                     
                 "<div class='card-footer text-muted'>Categoria: " + element.category + "</div>" +
                 "</div>";
