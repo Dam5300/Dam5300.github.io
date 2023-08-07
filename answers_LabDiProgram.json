@@ -294,88 +294,91 @@
 		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Sia R(A1, A2, A3, A4) uno schema di relazione. Se {A1, A2, A3} è una superchiave di R, allora {A1, A2}: ",
+		"question": "Qual'è la sintassi generale per accedere ad una funzione all'interno di un namespace?",
 		"answers": {
-			"a": "É certamente superchiave ma non chiave di R.",
-			"b": "É certamente chiave di R.",
-			"c": "Potrebbe essere o no superchiave di R.",
-			"d": "Certamente non è superchiave di R."
+			"a": "namespace::function",
+			"b": "namespace,function",
+			"c": "namespace#function",
+			"d": "namespace$function"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": "a",
 		"reason":"",
-		"category": "Schema Relazionale"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Il vincolo di integrità dell'entità stabilisce che, in una relazione:",
+		"question": "Come è nota l'operazione di riunire i dati e le relative funzionalità all'interno di una singola entità? ",
 		"answers": {
-			"a": "Nessun attributo può assumere valore nullo.",
-			"b": "Nessun attributo che faccia parte della chiave primaria può assumere valore nullo.",
-			"c": "Nessun attributo che faccia parte della chiave candidata può assumere valore nullo.",
-			"d": "Nessun attributo che faccia parte di una superchiave può assumere valore nullo."
+			"a": "Astrazione",
+			"b": "Incapsulamento",
+			"c": "Polimorfismo",
+			"d": "Modularità"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Schema Relazionale"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Nella base di dati della figura seguente: <br><br> <img src='img/5.webp' class='responsive-img' alt='Immagine 5.webp'><br> <br>Il vincolo di integrità referenziale sia stato specificato con l'opzione <b>ON UPDATE CASCADE.</b> Con riferimento alla popolazione di figura, ciò implica che: ",
+		"question": "Qual'è la sintassi corretta per definire un namespace",
 		"answers": {
-			"a": "Se viene modificato il valore di E, il valore di A viene posto uguale a un valore di default.",
-			"b": "Se viene modificato il valore di A, il valore di E viene posto uguale a un valore di default.",
-			"c": "Se viene modificato il valore di E viene modificato di conseguenza il valore di A.",
-			"d": "Se viene modificato il valore di A viene modificato di conseguenza il valore di E."
+			"a": "namespace name{}",
+			"b": "Namespace name{}",
+			"c": "namespace name{}",
+			"d": "typedef namespace name{} NAME"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": "a",
 		"reason":"",
-		"category": "SQL"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Sia $R(X)$ uno schema di relazione, $r$ una sua generica istanza, $Y \\subseteq X$ un sottoinsieme non vuoto di $X$. Non siano consentiti valori nulli per gli attributi di Y. <br>L'uguaglianza $|\\pi_y(r)|=|r|$",
+		"question": "Qaule delle seguenti direttive del processore csono corrette per includere un header file?",
 		"answers": {
-			"a": "É sempre vera.",
-			"b": "Non è mai vera.",
-			"c": "É vera se $Y$ è superchiave di $R(X)$",
-			"d": "É vera se $Y$ è chiave esterna di $R(X)$"
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Siano $R_1(X)$ e $R_2(X)$ due schemi di relazione, $r_1$ e $r_2$ generiche istanze di $R_1$ e $R_2$,rispettivamente, $c$ una condizione di join. É certamente <b>falso</b> che:",
-		"answers": {
-			"a": "$|r_1 \\bowtie_c r_2| \\not = |r_1|*|r_2|$",
-			"b": "$|r_1 \\bowtie_c r_2| > |r_1|*|r_2|$",
-			"c": "$|r_1 \\bowtie_c r_2| = |r_1|*|r_2|$",
-			"d": "$|r_1 \\bowtie_c r_2| < |r_1|*|r_2|$"
+			"a": "#inculde \"file.h\"",
+			"b": "#include &lt;file.h&gt;",
+			"c": "#include file",
+			"d": "#include file.h"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Siano date le due relazioni: <br> STUDENTE_1<br> <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th><u>Matricola</u></th> <th>Cognome</th> </tr> <tr> <td>1</td> <td>Verdi</td> </tr> </tbody> </table></div>  STUDENTE_2<br> <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th><u>Matricola</u></th> <th>Cognome</th> </tr> <tr> <td>2</td> <td>Rossi</td> </tr> </tbody> </table></div> L'operazione STUDENTE_1-STUDENTE_2 restituisce: </font>",
+		"question": "Qual'è la parola chiave per accedere alla viariabile x all'interno del namespace ns senza dover specificare ogni volta [ns::s] ?",
 		"answers": {
-			"a": "La relazione vuota.",
-			"b": "La relazione <table class='table table-edit table-bordered'> <tbody> <tr> <td><u>Matricola</u></td> <td>Cognome</td> </tr> <tr> <td>1</td> <td>Verdi</td> </tr> </tbody> </table>",
-			"c": "La relazione <table class='table table-edit table-bordered'> <tbody> <tr> <td><u>Matricola</u></td> <td>Cognome</td> </tr> <tr> <td>2</td> <td>Rossi</td> </tr> </tbody></table>",
-			"d": "La relazione <table class='table table-edit table-bordered'> <tbody> <tr> <td><u>Matricola</u></td> <td>Cognome</td> </tr> <tr> <td>1</td> <td>Verdi</td> </tr> <tr> <td>2</td> <td>Rossi</td> </tr> </tbody> </table>"
+			"a": "using x",
+			"b": "dynamic x",
+			"c": "const x",
+			"d": "static x"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Header, scope e namespace"
+	},
+	{
+		"question": "Come si crea una variabile contenente il riferimento ad un'altra variabile?",
+		"answers": {
+			"a": "Con la parola chiave ref",
+			"b": "Con l'operatore &",
+			"c": "Con l'operatore *",
+			"d": "Cpn la parola chiave REF"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "SQL"
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
-		"question": "La metodologia standard di progettazione di una base di dati prevede che siano eseguite, nell'ordine, le fasi di progettazione:",
+		"question": "Quali delle seguenti dichiarazioni sono corrette?",
 		"answers": {
-			"a": "Concettuale, fisica, logica.",
-			"b": "Concettuale, logica, fisica.",
-			"c": "Fisica, concettuale, logica.",
-			"d": "Logica, fisica, concettuale."
+			"a": "Le variabili globali inizializzate sono immagazzinate nello Stack",
+			"b": "Le variabili globali non inizializzate sono immagazzinate nello Stack",
+			"c": "Le variabili globali inizializzate sono immagazzinate nell'Initialized Data Segment",
+			"d": "Le variabili locali inizializzate sono immagazinate nello Stack.",
+			"e" : "Le variabili locali non inizializzate sono immagazinate nello Stack.",
+			"f" : "Le variabili locali inizializzate sono immagazzinate nell’Initialized Data segment",
+			"g" : "Le variabili locali non inizializzate sono immagazzinate nell’Initialized Data segment"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["c","d","e"],
 		"reason":"",
-		"category": "Teoria"
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
 		"question": "Con riferimento allo schema ER della figura seguente<br> <img src='img/6.webp' style='max-width: 100%; height: auto;' alt='Immagine 10.webp'> <br> è possibile che vi sia più di un'occorrenza di R che associa la stessa coppia di occorrenze di E1 e E2?",
