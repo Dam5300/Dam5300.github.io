@@ -381,136 +381,136 @@
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
-		"question": "Con riferimento allo schema ER della figura seguente<br> <img src='img/6.webp' style='max-width: 100%; height: auto;' alt='Immagine 10.webp'> <br> è possibile che vi sia più di un'occorrenza di R che associa la stessa coppia di occorrenze di E1 e E2?",
+		"question": "Quali delle seguenti affermazioni sono vere se un argomento della lista dei parametri di una funzione è definito come una costante?",
 		"answers": {
-			"a": "Sì, purchè i valori di AR siano diversi per ciascuna di queste occorrenze di R.",
-			"b": "Sì, per un'opportuna semantica di R.",
-			"c": "Sì, ma esse vanno documentate tramite opportune regole di derivazione.",
-			"d": "No."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Con riferimento allo schema ER della figura seguente<br><br> <img src='img/7.webp' style='max-width: 100%; height: auto;' alt='Immagine 7.webp'><br>quale delle seguenti affermazioni è<i> certamente vera</i>?",
-		"answers": {
-			"a": "Ci possono essere occorrenze di R a cui non partecipa alcuna occorrenza di E1.",
-			"b": "Ci possono essere occorrenze di E2 che partecipano a una sola occorrenza di R.",
-			"c": "Ogni occorrenza di E2 deve partecipare a più occorrenze di R.",
-			"d": "Ogni occorrenza di E1 deve partecipare ad almeno un'occorrenza di R."
+			"a": "L'argomento può essere modificato all'interno della funzione",
+			"b": "L'argomento non può essere modificato all'interno della funzione",
+			"c": "Un errore viene lanciato in compilazione",
+			"d": "Un errore viene lanciato in esecuzione"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
-		"question": "É possibile che uno schema ER ben progettato presenti ridondanze?",
+		"question": "Che cos'è lo \"Stack\" ?",
 		"answers": {
-			"a": "No",
-			"b": "Sì, ma esse vanno documentate tramite opportune regole di vincolo.",
-			"c": "Sì, ma esse vanno documentate tramite opportune regole di derivazione.",
-			"d": "Sì, e non è necessario documentarle in alcun modo."
+			"a": "E' un area della memoria con struttura FIFO",
+			"b": "E' un area della memoria con struttura LIFO",
+			"c": "E' un area della memoria non strutturata",
+			"d": "Non è un area della memoria"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Che cos'è una variabile statica?",
+		"answers": {
+			"a": "Una variabile globale con valore costante ",
+			"b": "Una variabile locale con valore constante",
+			"c": "Una variabile locale o globale che mantiene il suo valore al di fuori dello scope",
+			"d": "Una variabile locale o globale che mantiene il suo valore al di fuori del programma"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
-		"question": "Perché sia traducibile in uno schema relazionale, uno schema ER ristrutturato non può presentare: ",
+		"question": "Qaul'è l'output del seguente programma? <br><img src='imgLdP/img7.png' class='responsive-img' alt='Immagine img7.png'>",
 		"answers": {
-			"a": "Cardinalità delle associazioni.",
-			"b": "Identificatori.",
-			"c": "Generalizzazioni.",
-			"d": "Cardinalità degli attributi."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Sia R(A, B, C) uno schema di relazione. Sapendo solo che $A \\to B$, si può sostenere che:",
-		"answers": {
-			"a": "A è certamente chiave esterna di R.",
-			"b": "A potrebbe essere o no chiave di R.",
-			"c": "A è certamente chiave di R.",
-			"d": "A è certamente superchiave ma non chiave di R."
+			"a": "46.5",
+			"b": "Comportamento indefnito a runtime",
+			"c": "Un indirizzo di memoria",
+			"d": "Errore di compilazione"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Dipendenze Funzionali"
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
-		"question": "Qual è la più restrittiva forma normale tra quelle sotto elencate?",
+		"question": "In quale area della memoria sono immagazzinate le istruzioni eseguibili?",
 		"answers": {
-			"a": "La prima.",
-			"b": "La seconda.",
-			"c": "La terza.",
-			"d": "La forma normale di Boyce e Codd."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Dipendenze Funzionali"
-	},
-	{
-		"question": "Il comando INSERT di SQL standard:",
-		"answers": {
-			"a": "É un comando di Data Definition Language (DDL).",
-			"b": "É un comando di Data Manipulation Language (DML).",
-			"c": "É sia un comando di DDL, che un comando di DML.",
-			"d": "Non è né un comando di DDL, né un comando di DML."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "SQL"
-	},
-	{
-		"question": "I dati gestiti tramite un DBMS:",
-		"answers": {
-			"a": "Una volta creati non possono più essere rimossi.",
-			"b": "Continuano ad esistere finché non sono esplicitamente rimossi.",
-			"c": "Hanno un tempo di vita che è limitato a quello delle singole esecuzioni dei programmi che li utilizzano",
-			"d": "Hanno una vita che termina allo spegnimento dellelaboratore su cui è installato il DBMS"
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "C’è differenza tra <b>schema</b> e <b>istanza</b> di una base di dati?",
-		"answers": {
-			"a": "Sì, lo schema è costituito dai valori dei dati mentre l’istanza descrive le caratteristiche dei dati.",
-			"b": "Sì, lo schema descrive le caratteristiche dei dati mentre l’istanza è costituita dai valori dei dati",
-			"c": "No, entrambi descrivono le caratteristiche dei dati",
-			"d": "No, entrambi sono costituiti dai valori dei dati"
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "L’ indipendenza logica dei dati:",
-		"answers": {
-			"a": "Consente di modificare lo schema fisico senza che ciò comporti necessariamente una modifica dello schema logico.",
-			"b": "Consente di modificare lo schema logico senza che ciò comporti necessariamente una modifica degli schemi esterni.",
-			"c": "Consente di modificare i dati a livello fisico senza che ciò comporti necessariamente una modifica dei dati a livello logico",
-			"d": "Consente di modificare i dati a livello logico senza che ciò comporti necessariamente una modifica dei dati a livello esterno"
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Sia R(X) uno schema di relazione. É possibile che due attributi distinti di R abbiano nome uguale?",
-		"answers": {
-			"a": "No.",
-			"b": "Sì.",
-			"c": "Sì ma solo se rappresentano concetti diversi.",
-			"d": "Sì ma solo se rappresentano lo stesso concetto."
+			"a": "Nel Text segment",
+			"b": "Nello Stack",
+			"c": "Nell'Heap",
+			"d": "Nessuna delle precedenti"
 		},
 		"correctAnswer": "a",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Cosa viene creato alla dichiarazione di una variabile di tipo reference?",
+		"answers": {
+			"a": "Una nuova variabile ",
+			"b": "L'alias di una variabile esistente",
+			"c": "Un puntatore",
+			"d": "Un indirizzo"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Quali delle seguenti dichiarazioni sono corrette?",
+		"answers": {
+			"a": "Le variabili locali sono locali ad uno specifico programma",
+			"b": "Le variabili locali sono locali ad uno specifico scope",
+			"c": "Le variabili locali sono immagazzinate nell'Uninitialized segment",
+			"d": "Le variabili locali vengono distrutte nello stesso ordine in cui sono create"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Qaul'è l'output dek seguente programma? <br><img src='imgLdP/img8.png' class='responsive-img' alt='Immagine img8.png'>",
+		"answers": {
+			"a": "2 3",
+			"b": "6 9",
+			"c": "2 15",
+			"d": "Errore"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Quali delle seguenti dichiarazioni sono corrette",
+		"answers": {
+			"a": "Le variabili globali sono inizializzate prima della prima istruzione nella funzione main()",
+			"b": "L'area di memoria delle variabili globali dichiarate ma non inizializzate dall'utente è automaticamente iniziata a 0",
+			"c": "Il valore delle variabili globali non può essere cambiato",
+			"d": "Le variabili globali sono inizializzate nello Stack se scalari, o nell'Heap create tramite new()"
+		},
+		"correctAnswer": ["a","b"],
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img9.png' class='responsive-img' alt='Immagine img9.png'>",
+		"answers": {
+			"a": "2 5 10",
+			"b": "2 4 5",
+			"c": "2 6 14",
+			"d": "2 4 9"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
+	},
+	{
+		"question": "Data la funzione [int f (int x, int& y)], come vengono passati gli argomenti?",
+		"answers": {
+			"a": "Per valore e per riferimento",
+			"b": "Per valore e per puntatore",
+			"c": "Per riferimento e per puntatore",
+			"d": "Entrambi per valore"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
 		"question": "Sia $R(X)$ uno schema di relazione. Un sottinsieme non vuoto $SK \\subset X$ si dice superchiave dello schema di relazione $R$ se, per ogni istanza $r(R)$ e per ogni coppia di tuple $t_1$, $t_2$ appartenenti $r(R)$:",
