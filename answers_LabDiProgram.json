@@ -257,7 +257,7 @@
 		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img4.png' class='responsive-img' alt='Immagine img4.PNG'>",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img4.png' class='responsive-img' alt='Immagine img4.png'>",
 		"answers": {
 			"a": "10",
 			"b": "5",
@@ -282,7 +282,7 @@
 		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img5.png' class='responsive-img' alt='Immagine img5.PNG'>",
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img5.png' class='responsive-img' alt='Immagine img5.png'>",
 		"answers": {
 			"a": "11",
 			"b": "01",
