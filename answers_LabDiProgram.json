@@ -321,8 +321,8 @@
 		"question": "Qual'è la sintassi corretta per definire un namespace",
 		"answers": {
 			"a": "namespace name{}",
-			"b": "Namespace name{}",
-			"c": "namespace name{}",
+			"b": "Namespace name{};",
+			"c": "namespace name{};",
 			"d": "typedef namespace name{} NAME"
 		},
 		"correctAnswer": "a",
