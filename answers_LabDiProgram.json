@@ -513,76 +513,76 @@
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
 	{
-		"question": "Sia $R(X)$ uno schema di relazione. Un sottinsieme non vuoto $SK \\subset X$ si dice superchiave dello schema di relazione $R$ se, per ogni istanza $r(R)$ e per ogni coppia di tuple $t_1$, $t_2$ appartenenti $r(R)$:",
+		"question": "Che caratteristica hanno di default le funzioni e le variabili di classe in C++",
 		"answers": {
-			"a": "$t_1 = t_2 \\Rightarrow t_1{[SK]} =t_2[SK]$",
-			"b": "$ t_1{[SK]} \\not =t_2[SK] \\Rightarrow t_1 \\not = t_2$",
-			"c": "$ t_1{[SK]} =t_2[SK] \\Rightarrow t_1  = t_2$",
-			"d": "$t_1 \\not = t_2 \\Rightarrow t_1{[SK]} \\not = t_2[SK]$"
+			"a": "protected",
+			"b": "private",
+			"c": "public",
+			"d": "public & protected"
+		},
+		"correctAnswer": "2",
+		"reason":"",
+		"category": "Classi"
+	},
+	{
+		"question": "Che funzioni hanno i costruttori nelle classi?",
+		"answers": {
+			"a": "Inizializzare gli oggetti",
+			"b": "Dichiarare le varibili membro",
+			"c": "Dichiarare le funzioni membro",
+			"d": "distruggere gli oggetti"
+		},
+		"correctAnswer": "1",
+		"reason":"",
+		"category": "Classi"
+	},
+	{
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img10.PNG' class='responsive-img' alt='Immagine img10.PNG'>",
+		"answers": {
+			"a": "5",
+			"b": "55",
+			"c": "Niente",
+			"d": "Errore"
 		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Classi"
 	},
 	{
-		"question": "Sia $R(A, B, C)$ uno schema di relazione. Dall' esame della sua istanza seguente $R$<br>  <div class='table-responsive'><table class='table table-bordered'> <tbody> <tr> <th>A</th> <th>B</th> <th>C</th> </tr> <tr> <td>a1</td> <td>b1</td> <td>c1</td> </tr> <tr> <td>a1</td> <td>b2</td> <td>c1</td> </tr> </tbody> </table></div> dove b1 $\\neq$ b2:",
+		"question": "Come può essere definito il costruttore di una classe?",
 		"answers": {
-			"a": "Si deduce che $A$ è certamente chiave di R.",
-			"b": "Si deduce che $B$ è certamente chiave di R.",
-			"c": "Si deduce che $C$ è certamente chiave di R.",
-			"d": "Non si può dedurre né ($A$) né ($B$) né ($C$)."
+			"a": "Solo public",
+			"b": "Solo private",
+			"c": "Public o privare o protected",
+			"d": "Solo protected"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Classi"
+	},
+	{
+		"question": "Cosa succede se l'utente si dimentica di definire il costruttore di una classe?",
+		"answers": {
+			"a": "Errore in compilazione",
+			"b": "Errore in esecuzione",
+			"c": "Gli oggetti di quella classe saranno sempre vuoti",
+			"d": "Il compilatore definisce un costruttore di default"
 		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Classi"
 	},
 	{
-		"question": "Sia <b> R(A1, A2, A3, A4)</b> uno schema di relazione. Se <b>{A1, A2, A3}</b> è una chiave di R allora <b>{A1, A2}</b>:",
+		"question": "Quali dei seguenti rappresentano un modo corretto per chiamare esplicitamente il costruttore della classe A? <br><img src='imgLdP/img11.PNG' class='responsive-img' alt='Immagine img11.PNG'>",
 		"answers": {
-			"a": "Potrebbe essere o no chiave di R.",
-			"b": "É certamente chiave di R.",
-			"c": "É superchiave ma non chiave di R.",
-			"d": "Non è né chiave né superchiave di R"
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Siano <i>R1(X1)</i> e <i>R2(X2)</i> due schemi di realzione e FK chiave esterna di <i>R1(X1)</i> che riferisce la chiave primaria PK di <i>R2(X2)</i>.<br>In assenza di ulteriori informazione possiamo sostenere che: ",
-		"answers": {
-			"a": "Almeno un attributo di FK potrebbe assumere valore nullo.",
-			"b": "Un attributo di FK assume valore nullo solo se il corrispondente attributo di PK assume valore nullo.",
-			"c": "Nessun attributo di FK può assumere valore nullo",
-			"d": "Almeno un attributo di FK assume certamente valore nullo"
+			"a": "A a(5)",
+			"b": "A a",
+			"c": "A a = A(5)",
+			"d": "A a = A()"
 		},
 		"correctAnswer": "a",
 		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Nella metodologia standard di progettazione di una base di dati, la fase di progettazione concettuale è stata introdotta per: ",
-		"answers": {
-			"a": "Affrontare da subito in dettaglio gli aspetti tecnologici della progettazione di una base di dati.",
-			"b": "Progettare un sistema di gestione di basi di dati (DBMS) adeguato alla realtà di interesse.",
-			"c": "Rappresentare formalmente le specifiche della realtà di interesse in maniera indipendente dai criteri di rappresentazione utilizzati nei DBMS.",
-			"d": "Rappresentare formalmente le specifiche della realtà di interesse impiegando i criteri di rappresentazione utilizzati nel DBMS a disposizione."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "<i>Dal solo punto di vista sintattico, </i>ossia del corretto uso formale dei costrutti del modello ER, lo schema ER della figura seguente: <br> <img src='img/7.webp' class='responsive-img' alt='Immagine 7.webp'>",
-		"answers": {
-			"a": "Può essere corretto o errato, a seconda della semantica di E1, E2 e R.",
-			"b": "Può essere corretto o errato, a seconda della semantica di E1, E2, R e dei loro attributi.",
-			"c": "É sicuramente corretto",
-			"d": "É sicuramente errato"
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Classi"
 	},
 	{
 		"question": "Nella figura seguente<br><img src='img/8.webp' class='responsive-img' alt='Immagine 8.webp'> <br> è rappresentato:",
