@@ -1194,112 +1194,114 @@
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "Quale dei seguenti modelli di dati <u>non</u> è un modello logico?",
+		"question": "Data la classe BankAccount, quale delle seguenti funzioni rappresenta una corretta implementazione di una funzione di assegnamento di movimento che trasferisce tutti i soldi da un account bancario ad un altro e fa il reset delle transazioni del primo account bancario? <br> <img src='imgLdP/img24.png' class='responsive-img' alt='Immagine im24.png'> br> <img src='imgLdP/img25.png' class='responsive-img' alt='Immagine im25.png'>",
 		"answers": {
-			"a": "Il modello Entità-Associazione.",
-			"b": "Il modello relazionale.",
-			"c": "Il modello gerarchico.",
-			"d": "Il modello reticolare."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Lo schema di relazione R(<u>A1</u>, A2, <u>A3</u>):",
-		"answers": {
-			"a": "Può avere come chiave primaria indifferentemente {A<sub>1</sub>} o {A<sub>3</sub>}, ma non entrambe.",
-			"b": "Deve avere o {A<sub>1</sub>} come chiave primaria e {A<sub>3</sub>} come chiave secondaria, o {A<sub>3</sub>} come chiave primaria e {A<sub>1</sub>} come chiave secondaria.",
-			"c": "Ha due chiavi primarie: {A<sub>1</sub>} e {A<sub>3</sub>}.",
-			"d": "Ha una sola chiave primaria: {A<sub>1</sub>, A<sub>3</sub>}."
+			"a": "fun1",
+			"b": "fun2",
+			"c": "fun3",
+			"d": "fun4",
+			"e": "Nessuna delle precedenti"
 		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "Schema Relazionale"
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "Siano R<sub>1</sub>(X)e R<sub>2</sub>(X) due schemi di relazione, r<sub>1</sub>e r<sub>2</sub> generiche istanze di R<sub>1</sub> e R<sub>2</sub>, rispettivamente, C una condizione di join. È<i>certamente vero</i> che:",
+		"question": "Quando è obbligatorio un costruttore di copia definito dall’utente?",
 		"answers": {
-			"a": "$max\\{|r_1|, |r_2|\\}$ $\\leq |r_1 \\bowtie_c r_2|$ $\\leq |r_1| * |r_2|$.",
-			"b": "$0 \\leq |r_1 \\bowtie_c r_2| \\leq |r_1| + |r_2|$.",
-			"c": "$min\\{|r_1|, |r_2|\\}$ $\\leq |r_1 \\bowtie_c r_2|$ $\\leq |r_1| * |r_2|$.",
-			"d": "$ 0 \\leq |r_1 \\bowtie_c r_2| \\leq |r_1| * |r_2|$."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Utilizzando la logica a 3 valori, la condizione di selezione<br>Età $\\neq$ 20<br>applicata all‘unica tupla della relazione seguente<br>PERSONE<br><div class='table-responsive'><table class=\"table table-bordered\"> <tbody><tr><th>Nome</th><th>Età</th><th>Reddito</th></tr><tr><td>Marco</td><td>NULL</td><td>45000</td></tr></tbody></table></div>",
-		"answers": {
-			"a": "Assume valore True.",
-			"b": "Assume valore False.",
-			"c": "Assume valore Unknown.",
-			"d": "Non assume un valore definito."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "L'operazione di algebra relazionale estesa<br>${}_{Nome, Cognome} {F}_{MAX(Saldo)}\\;$$(CONTO\\_CORRENTE)$ </br></br>applicata alla relazione seguente:<br> <div class='table-responsive'><table class=\"table table-bordered\"> <tbody><tr><td colspan=\"4\" style='text-align:center'><b>CONTO_CORRENTE</b></td></tr> <tr> <th><u>Numero</u></th> <th>Nome</th> <th>Cognome</th> <th>Saldo</th> </tr> <tr> <td>1</td> <td>Luca</td> <td>Rossi</td> <td>200</td> </tr> <tr><td>2</td><td>Luca</td><td>Verdi</td><td>200</td></tr><tr><td>3</td><td>Luca</td><td>Rossi</td><td>200</td></tr></tbody></table></div>",
-		"answers": {
-			"a": "0 tuple.",
-			"b": "1 tupla.",
-			"c": "2 tuple.",
-			"d": "3 tuple."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "SQL"
-	},
-	{
-		"question": "Sia (X,Y) la cardinalità di partecipazione di un’entità E ad un’associazione R. Quale delle seguenti affermazioni è certamente <u>errata</u>?",
-		"answers": {
-			"a": "Se Y = N allora ogni occorrenza di E deve partecipare a più di una occorrenza di R.",
-			"b": "Se Y = 1 allora ogni occorrenza di E può partecipare ad al più una occorrenza di R.",
-			"c": "Se X = 0 allora ci possono essere occorrenze di E che non partecipano ad alcuna occorrenza di R.",
-			"d": "Se X = 1 allora ogni occorrenza di E deve partecipare ad almeno una occorrenza di R."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Si supponga di disporre di uno schema ER, prodotto nella fase di progettazione concettuale. Un esame di questo schema evidenzi che non occorre effettuare alcuna scelta di ristrutturazione. Bisogna comunque calcolare la tavola degli accessi?",
-		"answers": {
-			"a": "Si, per tutte le operazioni previste sulla base di dati.",
-			"b": "No.",
-			"c": "Si, ma solo per il 20% delle operazioni previste, in base alla regola \"ottanta-venti\".",
-			"d": "Si, ma solo per l’80% delle operazioni previste, in base alla regola \"ottanta-venti\"."
+			"a": "Mai, il compilatore crea un costruttore di copia di default che si occupa già dell’operazione di copia profonda",
+			"b": "Ogni volta che si vuole ottenere una copia profonda quando si inizializza un oggetto con un altro oggetto della stessa classe",
+			"c": "Quando si vuole una copia membro-a-membro tra due oggetti della stessa classe",
+			"d": "Solamente quando la classe ha variabili membro private"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "La fase di ristrutturazione di uno schema ER è stata introdotta per:",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img26.png' class='responsive-img' alt='Immagine img26.png'>",
 		"answers": {
-			"a": "Arricchire e completare lo schema ER in base ai nuovi requisiti via via raccolti.",
-			"b": "Rendere più leggibile e ordinato lo schema ER.",
-			"c": "Ottenere una versione migliorata dello schema ER, dopo averlo discusso con gli utenti.",
-			"d": "Rendere possibile la traduzione dello schema ER e ottimizzare il progetto."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Siano R(X) uno schema di relazione. F l’insieme delle dipendenze funzionali sussistenti in R e r un‘istanza di R che soddisfa le dipendenze in F. Quale delle seguenti operazioni <u>non</u> ha le potenzialità di violare le dipendenze in F?",
-		"answers": {
-			"a": "Inserimento di una nuova tupla in r.",
-			"b": "Modifica di una tupla di r.",
-			"c": "Cancellazione di una tupla di R.",
-			"d": "Qualsiasi operazione di aggiornamento di r."
+			"a": "Assignment operator called <br> Assignment operator called",
+			"b": "Copy constructor called <br> Assignment operator called",
+			"c": "Assignment operator called <br> Copy constructor called",
+			"d": "Errore"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "Teoria"
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img27.png' class='responsive-img' alt='Immagine img27.png'>",
+		"answers": {
+			"a": "Prima stringa <br> Prima stringa <br> Seconda stringa <br> Seconda stringa",
+			"b": "Prima stringa <br> Seconda stringa <br> Prima stringa <br> Seconda stringa",
+			"c": "Prima stringa <br> Prima stringa <br> Prima stringa <br> Seconda stringa",
+			"d": "Errore"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Quali delle seguenti funzioni sono fornite dal compilatore se non vengono definite dall’utente nella classe?",
+		"answers": {
+			"a": "Costruttore di default",
+			"b": "Distrutore",
+			"c": "Costruttore di copia",
+			"d": "Nessuno delle precedenti"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "SCome si richiede siano passati gli argomenti all’assegnamento di copia??",
+		"answers": {
+			"a": "Per valore",
+			"b": "Per riferimento",
+			"c": "Per valore o per riferimento",
+			"d": "Tramite puntatore",
+			"e": "Con la modalità che si desidera"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Quali delle seguenti affermazioni sono vere riguardo la classe A? <br> <img src='imgLdP/img28.png' class='responsive-img' alt='Immagine img28.png'>",
+		"answers": {
+			"a": "Constructor called",
+			"b": "Constructor called <br> Constructor called",
+			"c": "Niente",
+			"d": "Errore"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Quali delle seguenti affermazioni sono vere riguardo la classe A? <br> <img src='imgLdP/img29.png' class='responsive-img' alt='Immagine img29.png'>",
+		"answers": {
+			"a": "1010",
+			"b": "87368746",
+			"c": "Niente",
+			"d": "Errore"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Qual è il tipo del valore di ritorno della funzione di assegnamento di copia in una classe?",
+		"answers": {
+			"a": "Nessuno",
+			"b": "void",
+			"c": "int",
+			"d": "Lo stesso tipo della classe"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
 		"question": "Siano R(X) uno schema di relazione, e W, Y, Z sottoinsiemi non vuoti di X. Quale delle seguenti asserzioni di X è falsa?",
