@@ -912,88 +912,90 @@
 		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "L'architettura a tre livelli di un DBMS è stata proposta con l'obiettivo primario di:",
+		"question": "Dove sono conservati gli oggetti creati usando l'operatore new ",
 		"answers": {
-			"a": "Garantire una più stretta dipendenza tra programmi e dati.",
-			"b": "Favorire l'indipendenza tra programmi e dati.",
-			"c": "Favorire l'indipendenza tra programma e operazioni.",
-			"d": "Favorire l'indipendenza dei dati."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Il principale vantaggio di una gestione dati tramite DBMS rispetto ad una gestione tramite file è dato da:",
-		"answers": {
-			"a": "Maggiore velocità di risposta alle interrogazioni.",
-			"b": "Minore costo complessivo del software.",
-			"c": "Possibilità di usufruire di interfacce grafiche di utente.",
-			"d": "Controllo centrallizato e indipendenza dei dati."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "In una base di dati, a regime, i metadati sono di solito:",
-		"answers": {
-			"a": "Molto più numerosi dei dati.",
-			"b": "Di numerosità paragonabile a quella dei dati.",
-			"c": "Un po' meno numerosi dei dati.",
-			"d": "Molto meno numerosi dei dati."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Sia R(X) uno schema di relazione. Allora:",
-		"answers": {
-			"a": "R può avere o no una superchiave.",
-			"b": "R può avere o no una chiave.",
-			"c": "R ha certamente almeno una chiave.",
-			"d": "R ha certamente almeno due chiavi."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Sia R(A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>,A<sub>4</sub>) uno schema di relazione. Se {A<sub>1</sub>,A<sub>2</sub>} è una superchiave di R allora:",
-		"answers": {
-			"a": "Sia {A<sub>1</sub>} che {A<sub>2</sub>} sono certamente chiavi di R.",
-			"b": "{A<sub>1</sub>} è certamente chiave di R.",
-			"c": "{A<sub>1</sub>,A<sub>2</sub>} è certamente chiave di R",
-			"d": "{A<sub>2</sub>} potrebbe essere o no chiave di R."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Siano R<sub>1</sub>(X<sub>1</sub>) e R<sub>2</sub>(X<sub>2</sub>) due schemi di relazione. Se FK è una esterna di R<sub>1</sub>(X<sub>1</sub>) che referisce la chiave primaria K di R<sub>2</sub> (X<sub>2</sub>) allora:",
-		"answers": {
-			"a": "$|FK| \\neq |K|$.",
-			"b": "$|FK| = |K|$.",
-			"c": "$|FK| \\geq |K|$.",
-			"d": "$|FK| \\leq |K|$."
+			"a": "Nella memoria Cache",
+			"b": "Nella memoria Heap/Free Store",
+			"c": "Nella memoria Stack",
+			"d": "Nella memoria di massa",
+			"e": "Nessuna delle precedenti"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Allocazione dinamica e deallocazione"
 	},
 	{
-		"question": "Siano X e Y due insiemi ordinati di attributi, R(X) e S(Y) due schemi di relazione e r e s due generiche istanze di R(X) e S(Y),rispettivamente. La differenza r-s:",
+		"question": "Come risolvere il problema del Dangling Pointer (puntatore ad una memoria deallocata)?",
 		"answers": {
-			"a": "È sempre definita.",
-			"b": "È certamente definita, purchè sia |X|=|Y|.",
-			"c": "È certamente definita,purchè sia |X|=|Y| e i domini degli attributi in posizione uguale in X e Y siano uguali.",
-			"d": "Non è mai definita."
+			"a": "Incrementando il puntatore",
+			"b": "Decrementando il puntatore",
+			"c": "Assegnando al puntaotre il valore 0 dopo la chiamata a delete",
+			"d": "Assegnando al puntatore il valore nullptr dopo la chiamata a delete"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Quali delle seguenti affermazioni sono sbagliate?",
+		"answers": {
+			"a": "I distruttori possono essere dichiarati come const",
+			"b": "Può esserci più di un distruttore in una classe",
+			"c": "La definizione di un distruttore inizia con ~",
+			"d": "I distruttori sono utilizzati per inizializzare le variabili"
+		},
+		"correctAnswer": ["a","b","d"],
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Quali delle seguenti è una corretta definizione di distruttore di classe?",
+		"answers": {
+			"a": "Una funzione speciale che viene chiamata per liberare le risorse acquisite dall'oggetto",
+			"b": "Una funzione speciale che viene chiamata per cancellare la classe",
+			"c": "Una funzione speciale che viene chiamata ogni volta cheun oggetto esce dallo scope",
+			"d": "Una funzione speciale che viene chiamata per cancellare tutti gli oggetti di una classe "
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Quando è consigliabile definire un distruttore?",
+		"answers": {
+			"a": "Quando la classe contiene puntatori ad una memoria allocata dinamicamente",
+			"b": "Quando la classe contiene variabili statiche",
+			"c": "Quando la classe contiene variabili statiche",
+			"d": "Quando la classe eredita le variabili e le funzioni di un'altra classe"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Che cosa succede quando un oggetto viene passato ad una funzione e copiato all'interno della funzione?",
+		"answers": {
+			"a": "Il distruttore non viene mai chiamato in questo caso",
+			"b": "Il distruttore della copia deve essere chiamato esplicantemente",
+			"c": "Il distruttore della copia viene chiamato in uscita dalla funzione",
+			"d": "Il distruttore deve essere definito dall'utente perchè venga chiamato dalla copia"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Quali delle seguenti affermazioni sono vere quando un oggetto è passato per riferimento ad una funzione?",
+		"answers": {
+			"a": "Il costruttore viene chiamato in ingresso alla funzione",
+			"b": "Il distruttore non viene chiamato in uscita dalla funzione",
+			"c": "Il distruttore viene chiamato in uscita dalla funzione",
+			"d": "Il distruttore deve essere chiamato esplicitamente",
+			"e": "Le variabili membro dell'oggetto non costanti possono essere modificate dalla funzione"
+		},
+		"correctAnswer": ["b","e"],
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
 	},
 	{
 		"question": "Siano r una relazione di grado 3 e s una relazione di grado 2.Il prodotto cartesiano r x s ha grado:",
