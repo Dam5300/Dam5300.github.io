@@ -695,220 +695,221 @@
 		"category": "Overloading operatori"
 	},
 	{
-		"question": "Nell'ipotesi che (X,Y) indichi la cardinalità di partecipazione di un'entità a un'associazione, quale dei seguenti valori è <b>certamente errato</b>?",
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img14.png' class='responsive-img' alt='Immagine img14.png'>",
 		"answers": {
-			"a": "X = 0.",
-			"b": "Y = 0.",
-			"c": "X = 1.",
-			"d": "Y = 1."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Siano R(X) uno schema di relazione, $Y \\subseteq X$, $Z \\subseteq X$, $Y$ e $Z$ non vuoti. Una dipendenza funzionale $Y \\to Z$ su R stabilisce che, qualsiasi sia l'istanza $r$ di $R$:",
-		"answers": {
-			"a": "Per ogni coppia di tuple $t_1,t_2$ di r se $t_1[Z]=t_2[Z]$ allora $t_1[Y]=t_2[Y]$.",
-			"b": "Esiste almeno una ogni coppia di tuple $t_1,t_2$ di r se $t_1[Z]=t_2[Z]$ allora $t_1[Y]=t_2[Y]$.",
-			"c": "Esiste almeno una coppia di tuple $t_1,t_2$ di r se $t_1[Y]=t_2[Y]$ allora $t_1[Z]=t_2[Z]$.",
-			"d": "Per ogni coppia di tuple $t_1,t_2$ di r se $t_1[Y]=t_2[Y]$ allora $t_1[Z]=t_2[Z]$."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Dipendenze Funzionali"
-	},
-	{
-		"question": "L'istruzione SQL standard<br><br> <pre style='text-align:left'>SELECT Cognome<br>FROM STUDENTE;</pre>applicata alla tabella seguente,  restituisce:<br><div class='table-responsive'><table class=\"table table-bordered\"> <tbody><tr><td colspan=\"4\" style=\"text-align:center\"><b>STUDENTE<b/></td></tr> <tr><th><u>Matricola</u></th> <th>Cognome</th></tr> <tr> <td>1</td> <td>Rossi</td></tr><tr><td>2</td><td>Rossi</td></tr></tbody></table></div>",
-		"answers": {
-			"a": "0 righe.",
-			"b": "1 riga.",
-			"c": "2 righe.",
-			"d": "3 righe."
+			"a": "100",
+			"b": "Errore",
+			"c": "144",
+			"d": "110"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "SQL"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Sia R(A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>,A<sub>4</sub>) uno schema di relazione e r una sua generica istanza. Se in R sussistono le dipendenze funzionali seguenti:<br> A<sub>1</sub> → A<sub>2</sub><br>A<sub>2</sub> →{A<sub>3</sub>,A<sub>4</sub>}<br> la decoposizione di R nei due schemi R<sub>1</sub>(A<sub>1</sub>,A<sub>2</sub>) e R<sub>2</sub>(A<sub>2</sub>,A<sub>3</sub>,A<sub>4</sub>):",
+		"question": "Come si può creare un arra?",
 		"answers": {
-			"a": "Certamente è senza perdita.",
-			"b": "Certamente non è senza perdita.",
-			"c": "Potrebbe essere o no senza perdita dipende dalla popolazione di r al momento della decoposizione.",
-			"d": "Potrebbe essere o no senza perdita dipende dalla semantica di R e degli attributi A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>,A<sub>4</sub>."
+			"a": "int a [4];",
+			"b": "int a[n]; //dove n è una variabile locale inizializzata",
+			"c": "int a[n] //dove n è una variabile globale inizializzata",
+			"d": "int a[] = {1,2,3,4};",
+			"e": "int a[4]; //dive b è un altro array di dimensione 4"
+		},
+		"correctAnswer": ["a","c","d"],
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Qual'è l'indice dell'ultimo elemento di un array di 9 elementi ?",
+		"answers": {
+			"a": "9",
+			"b": "8",
+			"c": "0",
+			"d": "Dipende dal programma"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Qual'è la definizione corretta di un array?",
+		"answers": {
+			"a": "Un array è una serie di elementi dello steso tipo in locazioni di memoria contigue",
+			"b": "Un array è una serie di elementi",
+			"c": "Un array è una serie di elementi dello steso tipo in locazioni di memoria non contigue",
+			"d": "Un array è una serie di elementi di tipo diverso in locazioni di memoria contigue"
 		},
 		"correctAnswer": "a",
 		"reason":"",
-		"category": "Dipendenze Funzionali"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Si supponga che l'istruzione SQL:</br><pre style='text-align:left'>CREATE TABLE RICAMBIO(<br>ID SMALLINT PRIMARY KEY,<br>Costruttore VARCHAR(30),<br>Codice VARCHAR(20)<br>UNIQUE(Costruttore,Codice));</pre>crei la tabella del solo schema di base di dati relazionale presente in un catalogo. Se la tabella è originariamente popolata come in figura<br><div class='table-responsive'><table class=\"table table-bordered\"><tbody><tr><td colspan=\"4\" style=\"text-align:center\"><b>RICAMBIO<b/></td></tr><tr><th><u>ID</u></th><th>Costruttore</th><th>Codice</th></tr><tr><td>1</td><td>Brembo</td><td>B62.15.170</td></tr></tbody></table></div>l'inserimento<br><pre>INSERT INTO RICAMBIO VALUES(2,'Brembo','B62.15.170');</pre>",
+		"question": "Qual'è il significatodi int* p[5]",
 		"answers": {
-			"a": "Verrà certamente accettato.",
-			"b": "Verrà rifiutato,perchè viola il vincolo di chiave di primaria.",
-			"c": "Verrà rifiutato,perchè viola un vincolo di chiave candidata.",
-			"d": "Verrà rifiutato,perchè viola un vincolo di integrità referenziale."
+			"a": "p è un array di 5 elementi",
+			"b": "p è un puntatore ad un array di 5 elementi",
+			"c": "p è un array di puntatori con 5 elementi",
+			"d": "La dichiarazione non è valida in C++"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "SQL"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Il modello di dati relazionale:",
+		"question": "Quali delle seguenti affermazioni sono corrette?",
 		"answers": {
-			"a": "È un modello fisico.",
-			"b": "È un modello logico.",
-			"c": "È un modello concettuale.",
-			"d": "Non è né fisico, né logico, né concettuale."
+			"a": "Il nome di un array è un lvalue",
+			"b": "Il nome di un array è un rvalue",
+			"c": "Il nome di un array è un puntatore",
+			"d": "Il nome di un array è un riferimento"
+		},
+		"correctAnswer": ["b","c"],
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img15.png' class='responsive-img' alt='Immagine img15.png'>",
+		"answers": {
+			"a": "4",
+			"b": "5",
+			"c": "Errore",
+			"d": "Nessuno dei precedenti"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Schema Relazionale"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Il linguaggio SQL:",
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img16.png' class='responsive-img' alt='Immagine img16.png'>",
 		"answers": {
-			"a": "È solo DDL.",
-			"b": "È solo DML.",
-			"c": "È sia DDL, sia DML.",
-			"d": "Non è nè DML nè DDL."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "SQL"
-	},
-	{
-		"question": "Sia R(A,B,C) uno schema relazionale per costruzione già in 1NF. Se in R sussistono solo le dipendenze funzionali A→B, A→C oltre a quelle eventualmente implicate da queste e a quelle banali allora la più forte forma normale soddisfacente la R è: ",
-		"answers": {
-			"a": "La prima.",
-			"b": "La seconda.",
-			"c": "La terza.",
-			"d": "BCNF."
+			"a": "4",
+			"b": "Errore",
+			"c": "5",
+			"d": "Nessuna delle precedenti"
 		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "Dipendenze Funzionali"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Sia R(A,B,C) uno schema relazionale per costruzione .Se in R sussistono solo le dipendenze funzionali A→B,A→C oltre a quelle eventualmente implicate da queste e a quelle banali allora R si può decomporre nei seguenti schemi di relazione:",
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img17.png' class='responsive-img' alt='Immagine img17.png'>",
 		"answers": {
-			"a": "R<sub>1</sub>(A,B),R<sub>2</sub>(B,C).",
-			"b": "R<sub>1</sub>(A,C),R<sub>2</sub>(B,C).",
-			"c": "R<sub>1</sub>(B,C),R<sub>2</sub>(A,C).",
+			"a": "10,20,30,40,50",
+			"b": "10,20,33,40,54",
+			"c": "Errore",
 			"d": "Nessuna delle precedenti."
 		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Qaul'è l'output dek seguente programma? <br><img src='imgLdP/img18.png' class='responsive-img' alt='Immagine img18.png'>",
+		"answers": {
+			"a": "4",
+			"b": "13",
+			"c": "14",
+			"d": "Errore"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Come si definisce un puntatore non inizializato in C++?",
+		"answers": {
+			"a": "Non si può ",
+			"b": "double* p0 = nullptr;",
+			"c": "double* p0 = [];",
+			"d": "double* p0 = None;"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img19.png' class='responsive-img' alt='Immagine img19.png'>",
+		"answers": {
+			"a": "Il valore di b è assegnato alla variabile a",
+			"b": "p alla fine punta alla variabile b",
+			"c": "Il valore di a è assegnato alla variabile b",
+			"d": "q alla fine punta alla variabile a"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Qual è l’output del seguente programma? <br><img src='imgLdP/img20.png' class='responsive-img' alt='Immagine img20.png'>",
+		"answers": {
+			"a": "fg",
+			"b": "cdef",
+			"c": "defg",
+			"d": "abcd"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Come si dichiara un puntatore generico?",
+		"answers": {
+			"a": "char*",
+			"b": "void*",
+			"c": "word*",
+			"d": "Non si può"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Puntatori, reference e array"
+	},
+	{
+		"question": "Quale valore non può mai essere assegnato ad una variabile di riferimento?",
+		"answers": {
+			"a": "Un valore intero",
+			"b": "Un valore in virgola mobile",
+			"c": "Un numero senza segno",
+			"d": "Un valore null"
+		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Nell’operazione $\\Pi_Y(R)$, y deve essere:",
+		"question": "Quali delle seguenti affermazioni sono vere?",
 		"answers": {
-			"a": "Un booleano.",
-			"b": "Una condizione di join.",
-			"c": "Una lista di attributi.",
-			"d": "Un reale."
+			"a": "Il riferimento è il nome alternativo di un oggetto",
+			"b": "Il valore di riferimento, una volta definito, può essere riassegnato",
+			"c": "Il valore di riferimento, una volta definito, non può essere riassegnato",
+			"d": "Il riferimento è il nome alternativo di una variabile"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["a","c","d"],
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Sia R(A1,A2,A3,A4) uno schema di relazione. Se {A4} è una superchiave di R allora:",
+		"question": "Quali delle seguenti affermazioni sono vere riguardo i riferimenti?",
 		"answers": {
-			"a": "{A1,A4} non è superchiave di R.",
-			"b": "{A4} non è chiave di R.",
-			"c": "{A1,A4} è chiave di R.",
-			"d": "{A4} è chiave di R."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Schema Relazionale"
-	},
-	{
-		"question": "Siano C1,C2,C3 3 clausole di selezione con logica a 3 valori,se C1=TRUE, C2=FALSE e C3=Unknown allora (C1 OR C2) OR C3:",
-		"answers": {
-			"a": "È TRUE.",
-			"b": "È FALSE.",
-			"c": "È Unknown.",
-			"d": "Non assume valore definito."
+			"a": "Non si può creare array di riferimenti",
+			"b": "Si può creare array di riferimenti",
+			"c": "E' possibile creare il riferimento di un riferimento",
+			"d": "Riferimento e puntatore sono la stessa cosa"
 		},
 		"correctAnswer": "a",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Puntatori, reference e array"
 	},
 	{
-		"question": "Siano C1,C2,C3 3 clausole di selezione con logica a 3 valori,se C1=Unknown,C2=Unknown e C3=FALSE allora NOT(C1 AND C2) OR C3:",
+		"question": "Quali delle seguenti affermazioni sono vere riguardo i riferimenti in C++?",
 		"answers": {
-			"a": "È TRUE.",
-			"b": "È FALSE.",
-			"c": "È Unknown.",
-			"d": "Non assume valore definito."
+			"a": "I riferimenti sono variabili che contengono l'indirizzo di altre variabili",
+			"b": "Riferimenti e le variabili a cui si riferiscono sono lo stesso indirizzo di memoria",
+			"c": "I riferimenti utilizzano l'operatore di dereferenziazione (*) per accedere al valore della variabile a cui si riferiscono",
+			"d": "I riferimenti possono essere passati come argomenti ad una funzione"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["b","d"],
 		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Sia R(<u>A1</u>,A2,A3,A4) uno schema di relazione con A1 chiave primaria e {A3,A4} chiave candidata con attributi con dominio <i>integer</i>. Si vuole inserire una generica istanza di r una tupla (1,2,null,null), l'inserimento:",
-		"answers": {
-			"a": "Andrà a buon fine.",
-			"b": "Sarà rifiutato perchè viola il primo vincolo.",
-			"c": "Sarà rifiutato perchè viola il secondo vincolo.",
-			"d": "Sarà rifiutato perchè viola il terzo vincolo."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Con riferimento alla schema ER ristrutturato in figura:<br><br><img src=\"img/11.webp\" class=\"responsive-img\"><br><br>Qual'è la miglior traduzione nello schema logico:",
-		"answers": {
-			"a": "Uno schema di relazione.",
-			"b": "Due schemi di relazione.",
-			"c": "Tre schemi di relazione.",
-			"d": "Quattro schemi di relazione."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Con riferimento allo schema ristrutturato in figura<br><br><img src=\"img/12.webp\" class=\"responsive-img\"><br><br> sapendo che tutti gli attributi hanno dominio intero, l'implementazione proposta in SQL:<br><br> <pre style='text-align:left'>CREATE TABLE E2(<br>A21 int,<br>A22 int,<br>PRIMARY KEY(a21,A22));<br>CREATE TABLE E1(<br>A11 int PRIMARY KEY,<br>A12,<br>A21 int not null REFERENCES E2(A21) int<br>A22 int not null REFERENCES E2(A22));</pre>",
-		"answers": {
-			"a": "Corrisponde allo schema ER fornito.",
-			"b": "Non corrisponde allo schema ER fornito.",
-			"c": "Può corrispondere o meno a seconda della semantica di R.",
-			"d": "Può corrispondere o meno e non abbiamo elementi sufficienti per farlo."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "SQL"
-	},
-	{
-		"question": "Da un punto di vista generale il seguente schema ER:<br><br><img src=\"img/13.webp\" class=\"responsive-img\"></font>",
-		"answers": {
-			"a": "È sicuramente corretto.",
-			"b": "È sicuramente errato.",
-			"c": "Può essere corretto o errato a seconda della semantica di E1,E2,R.",
-			"d": "Può essere corretto o errato a seconda della semantica di E1,E2,R e dei loro attributi."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Dal punto di vista solamente sintattico il seguente schema ER:<br><br><img src=\"img/7.webp\" class=\"responsive-img\"></font>",
-		"answers": {
-			"a": "È sicuramente corretto.",
-			"b": "È sicuramente errato.",
-			"c": "Può essere corretto o errato a seconda della semantica di E1,E2,R.",
-			"d": "Può essere corretto o errato a seconda della semantica di E1,E2,R e dei loro attributi."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Puntatori, reference e array"
 	},
 	{
 		"question": "L'architettura a tre livelli di un DBMS è stata proposta con l'obiettivo primario di:",
