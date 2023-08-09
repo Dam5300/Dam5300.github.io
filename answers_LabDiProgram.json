@@ -1304,87 +1304,151 @@
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "Siano R(X) uno schema di relazione, e W, Y, Z sottoinsiemi non vuoti di X. Quale delle seguenti asserzioni di X è falsa?",
+		"question": "Quali delle seguenti dichiarazioni sono vere riguardo i template?",
 		"answers": {
-			"a": "$ W \\to Y \\Rightarrow Y \\to W $.",
-			"b": "$W \\to Y$.",
-			"c": "$ \\{W \\to Y, Y \\to Z\\} \\Rightarrow W \\to Z$.",
-			"d": "$W \\supseteq Y \\Rightarrow W \\to Y$."
+			"a": "I template sono una caratteristica di C++ che consente all’utente di scrivere un solo codice per tipi diversi di dato",
+			"b": "I template consentono di scrivere funzioni che possono essere usate per tipi diversi di dato, inclusi quelli definiti dall’utente",
+			"c": "I template consentono di scrivere funzioni che possono essere usate per tipi diversi di dato, esclusi quelli definiti dall’utente",
+			"d": "I template sono un esempio di polimorfismo",
+			"e": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a", "b"],
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Template"
 	},
 	{
-		"question": "Se in R(A, B, C) sussistono solo le dipendenze funzionali:<br>A $\\to$ B<br>B $\\to$ C<br>oltre a quelle implicate da queste e a quelle banali, allora R ha come chiavi candidate:",
+		"question": "Qual è l’output del seguente programma? <br> <img src='imgLdP/img30.png' class='responsive-img' alt='Immagine img30.png'>",
 		"answers": {
-			"a": "{A} e {B}.",
-			"b": "Solo {A}.",
-			"c": "Solo {B}.",
-			"d": "{A}, {B} e {C}."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Dipendenze Funzionali"
-	},
-	{
-		"question": "Sia <i>STUDENTE</i> l’unica tabella di <i>LICEO</i>, unico schema di un catalogo di base di dati relazionale. Si confrontino i 2 comandi:<br><br> <ol type=\"a\" style=\"text-align:left!important\"> <li> <pre>DELETE FROM STUDENTE;</pre> </li> <li> <pre>DROP TABLE STUDENTE;</pre> </li> </ol>",
-		"answers": {
-			"a": "Sia <font color=\"blue\"><b>a.</b></font> che <font color=\"blue\"><b>b.</b></font> eliminano la tabella con i metadati che la descrivono.",
-			"b": "Sia <font color=\"blue\"><b>a.</b></font> che <font color=\"blue\"><b>b.</b></font> cancellano il contenuto della tabella, lasciando inalterati i metadati che la descrivono.",
-			"c": "<font color=\"blue\"><b>a.</b></font> elimina la tabella con i suoi metadati, <font color=\"blue\"><b>b.</b></font> cancella il contenuto della tabella ma non ne elimina i metadati.",
-			"d": "<font color=\"blue\"><b>b.</b></font> elimina la tabella con i suoi metadati, <font color=\"blue\"><b>a.</b></font> cancella il contenuto della tabella ma non ne elimina i metadati."
+			"a": "Created <br> Destroyed",
+			"b": "Created",
+			"c": "Niente",
+			"d": "Errore"
 		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "SQL"
+		"category": "Template"
 	},
 	{
-		"question": "Sia R(A1, A2, A3) uno schema di relazione. Allora:",
+		"question": "Qual è l’output del seguente programma? <br> <img src='imgLdP/img31.png' class='responsive-img' alt='Immagine img31.png'>",
 		"answers": {
-			"a": "{A1, A2, A3} è certamente chiave di R.",
-			"b": "{A1, A2, A3} è certamente superchiave di R.",
-			"c": "{A1, A2, A3} potrebbe essere o no superchiave.",
-			"d": "Nessuna delle altre risposte è corretta."
+			"a": "1 <br> 1.5",
+			"b": "1 <br> 1",
+			"c": "1 <br> Errore",
+			"d": "Errore"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Template"
 	},
 	{
-		"question": "Sia R(<u>A</u>, B, C), a quale formula di algebra relazionale corrisponde il comando SQL <br/> <pre style='text-align:left'>SELECT B,C<br/>FROM R<br/>WHERE A = 1</pre> ",
+		"question": "Qual è l’output del seguente programma? <br> <img src='imgLdP/img32.png' class='responsive-img' alt='Immagine img32.png'>",
 		"answers": {
-			"a": "$\\sigma_{A = 1}(\\Pi_{B,C}(R))$.",
-			"b": "$\\Pi_{B,C}(\\sigma_{A = 1}(R))$.",
-			"c": "$\\rho_{B,C}(\\sigma_{A = 1}(R))$.",
-			"d": "Nessuna delle precedenti."
+			"a": "5 10 <br> 5 <br> 5&",
+			"b": "5 $ <br> 5 $ <br> 5 &",
+			"c": "5 10 <br> 5 $ <br> 5.0 &",
+			"d": "Niente",
+			"e": "Errore"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Template"
+	},
+	{
+		"question": "Quali sono le differenze fra una normale funzione e una funzione template?",
+		"answers": {
+			"a": "La funzione normale può lavorare con tipi di dato diversi mentre la funzione template lavora solo con un tipo specifico di dato",
+			"b": "La funzione template può lavorare con tipi di dato diversi mentre la funzione normale lavora solo con un tipo specifico di dato",
+			"c": "Una funzione template può accettare un solo parametro mentre una funzione normale ne può accettare più di uno",
+			"d": "Una funzione template può accettare più di un parametro mentre una funzione normale ne può accettare uno solo"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Template"
 	},
 	{
-		"question": "Quanto spesso cambia uno schema in una base di dati?",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img33.png' class='responsive-img' alt='Immagine img33.png'>",
 		"answers": {
-			"a": "Molto più frequentemente delle sue istanze.",
-			"b": "Di frequenza pari alle sue istanze.",
-			"c": "Molto meno frequentemente delle sue istanze.",
-			"d": "Non può cambiare mai."
+			"a": "x = 1 count = 0 <br>x = 1 count = 1 <br>x = 1 count = 0",
+			"b": "x = 1 count = 0 <br>x = 1 count = 1 <br>x = 1.1 count = 0",
+			"c": "x = 1 count = 0 <br>x = 1 count = 1 <br>x = 1.1 count = 2",
+			"d": "x = 1 count = 0 <br>x = 1 count = 1 <br>x = 1.1 count = 0"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Template"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img44.png' class='responsive-img' alt='Immagine img44.png'>",
+		"answers": {
+			"a": "7 <br>7.0 <br>7.0 <br>",
+			"b": "7 <br>7.0 <br>7 <br>.",
+			"c": "Errore in tutte le dichiarazione di cout poiché il tipo dei dati non è definito",
+			"d": "Error nell’ultimo cout poiché il tipo dei dati è ambiguo"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Template"
+	},
+	{
+		"question": "Quando le funzioni template devono esplicitare i parametri template?",
+		"answers": {
+			"a": "Sempre, i tipi template non possono essere dedotti dagli argomenti della funzione",
+			"b": "Quando i tipi template non possono essere dedotti dagli argomenti della funzione",
+			"c": "Quando i parametri template possono essere classi definite dall’utente",
+			"d": "Mai, i tipi template possono sempre essere dedotti dagli argomenti della funzione"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Template"
+	},
+	{
+		"question": "I template sono legati in un qualche modo al concetto di polimorfismo?",
+		"answers": {
+			"a": "No, rappresentano un concetto completamente diverso",
+			"b": "Solamente nel caso dei class template",
+			"c": "SI, ma solo al comncetto di polimorfismo a tempo di compilazione",
+			"d": "SI, ma solo al comncetto di polimorfismo a tempo di esecuzione"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "Teoria"
+		"category": "Template"
 	},
 	{
-		"question": "Dato lo schema ER in figura <br><img class='responsive-img' src='img/23.webp'><br> viene creata la seguente tabella dei volumi <br><div class='table-responsive'><table class=\"table table-bordered\"> <tbody><tr><th>Nome</th><th>Tipo</th><th>Volume</th></tr><tr><td>DIPENDENTE</td><td>E</td><td>100</td></tr><tr><td>PROGETTO</td><td>E</td><td>10</td></tr><tr><td>R1</td><td>R</td><td>X</td></tr></tbody></table></div> Se sappiamo che in media ogni dipendente partecipa a 5 progetti, che valore assume X affinché la tabella dei volumi risulti corretta?",
+		"question": "Se nello stesso sorgente si definisce una funzione template come [ template <class T> void f(T &i){} ], e una funzione [ void f(const int &i){} ], cosa succede alla funzione non template?",
 		"answers": {
-			"a": "$5 * 100 = 500$.",
-			"b": "$5 * 10 = 50$.",
-			"c": "$5$.",
-			"d": "Non è possibile determinare un valore corretto."
+			"a": "Viene ignorata poiché è presente una funzione più generica con lo stesso nome",
+			"b": "Sostituisce la funzione template che quindi risulta non più utilizzabile",
+			"c": "È chiamata solo quando l'argomento è di tipo int",
+			"d": "Genera errore"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": "c",
 		"reason":"",
-		"category": "Tabelle Volumi"
+		"category": "Template"
+	},
+	{
+		"question": "Quali delle seguenti funzioni rappresentano una funzione template corretta che prende in ingresso due numeri, interi o reali, e un operatore come carattere ‘+’/’-‘ o come valore booleano true/false (che rappresenta rispettivamente ‘+’/’-‘) e restituisce il risultato atteso? <br><img src='imgLdP/img34.png' class='responsive-img' alt='Immagine img34.png'>",
+		"answers": {
+			"a": "fun1",
+			"b": "fun2",
+			"c": "fun3",
+			"d": "fun4",
+			"e": "Nessuna delle precedenti"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Template"
+	},
+	{
+		"question": "Quali delle seguenti affermazioni sono corrette? <br><img src='imgLdP/img35.png' class='responsive-img' alt='Immagine img35.png'>",
+		"answers": {
+			"a": "func<int,char>(3,’a’);",
+			"b": "func<int,char>(3.0,’a’);",
+			"c": "func(3,’a’);",
+			"d": "func(<int> 3.0, <char> ’a’);"
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "Template"
 	}
+	
 ]
