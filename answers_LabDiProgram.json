@@ -998,196 +998,200 @@
 		"category": "Allocazione dinamica e deallocazione"
 	},
 	{
-		"question": "Siano r una relazione di grado 3 e s una relazione di grado 2.Il prodotto cartesiano r x s ha grado:",
+		"question": "Come viene effettuata l'allocazione dinamica di memoria in C++?",
 		"answers": {
-			"a": "$3$.",
-			"b": "$2$.",
-			"c": "$3 + 2 = 5$.",
-			"d": "$3 \\cdot 2 = 6$."
+			"a": "con l'operatore malloc",
+			"b": "Con l'operatore alloc",
+			"c": "Cpn l'operatore new",
+			"d": "Con l'operatore allocate"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Allocazione dinamica e deallocazione"
 	},
 	{
-		"question": "Con riferimento allo schema ER della figura seguente:<br><img src=\"img/15.webp\" class=\"responsive-img\"><br>quale delle seguenti affermazioni è certamente falsa: ",
+		"question": "Quali delle seguenti affermazioni sono vere riguardo l'espressione [p = new int[20] ]?",
 		"answers": {
-			"a": "Ci possono essere occorrenze di R a cui non partecipa alcuna occorrenza di E2.",
-			"b": "Ci possono essere occorrenze di E3 partecipano a più occorrenze di R.",
-			"c": "Non ci possono essere occorrenze di E3 che non partecipano ad alcuna occorrenza di R.",
-			"d": "Ci possono essere occorrenze di E2 che non partecipano ad alcuna occorrenza di R."
+			"a": "Alloca la memoria per 20 interi e assegna l'indirizzo di base a p",
+			"b": "Alloca la memoria 20 interi fuori dallo stack locale a un blocco",
+			"c": "Legge 20 valori interi dello stream input",
+			"d": "Alloca la memoria per un intero di dimensione 20 bytes"
 		},
 		"correctAnswer": "a",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Allocazione dinamica e deallocazione"
 	},
 	{
-		"question": "Dal punto di vista sintattico, ossia del corretto uso formale dei costruttidel modello ER, lo schema ER della figura seguente:<br><br><img src=\"img/16.webp\" class=\"responsive-img\">,",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img21.png' class='responsive-img' alt='Immagine img21.png'>",
 		"answers": {
-			"a": "È sicuramente corretto.",
-			"b": "È sicuramente errato.",
-			"c": "Può essere corretto o errato a seconda della semantica di E1,E2,R.",
-			"d": "Può essere corretto o errato a seconda della semantica di E1,E2,R e dei loro attributi."
+			"a": "100",
+			"b": "Errore",
+			"c": "144",
+			"d": "110"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Come si definisce un puntatore non inizializzato in C++?",
+		"answers": {
+			"a": "Non si può",
+			"b": "double* p0 = nullptr;",
+			"c": "double* p0 = []",
+			"d": "double* p0 = None"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Allocazione dinamica e deallocazione"
 	},
 	{
-		"question": "Sia R(A,B,C) uno schema di relazione, per costruzione già in prima forma normale.Se in R sussistono solo le dipendenze funzionali:<br>A$\\to$B<br>B$\\to$C<br>oltre oltre a quelle eventualmente implicate da queste e quelle banali, allora la più forte forma normale soddisfatta di R è:",
+		"question": "Quali dei seguenti rappresentano il corretto esempio di allocazione dinamica di memoria per una variabile intera?",
 		"answers": {
-			"a": "La prima.",
-			"b": "La seconda.",
-			"c": "La terza.",
-			"d": "La forma normale di Boyce e Codd."
+			"a": "int* x = new int;",
+			"b": "int x = new *int;",
+			"c": "int x = int new;",
+			"d": "int* x = new int[];"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Quali delle seguenti proprietà dell'allocazione dinamica della memoria è vera?",
+		"answers": {
+			"a": "L'operatore new restituisce l'indirizzo relativo all'indirizzo del blocco di memoria allocata",
+			"b": "Memoria allocata dinamicamento è accessibile indirettamente tramite un puntatore",
+			"c": "Ogni blocco di memoria allocata ha sempre un puntatore proprio e specifico",
+			"d": "Memoria allocata dinamicamente non viene liberata in modo automatico"
+		},
+		"correctAnswer": ["a","b","d"],
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Per quali motivi può occorrere un memory leak?",
+		"answers": {
+			"a": "Il puntatore alla memoria allocata dinamicamente non esiste più ma il blocco di memoria allocato esiste ancora",
+			"b": "Il blocco di memoria allocato dinamicamente è stato liberato, ma esiste un puntatore a quel blocco",
+			"c": "Dopo che è stato utilizzato un operatore new, non viene utilizzato l'operatore delete prima di uscire dello scope",
+			"d": "Si esegue una doppia operazione di delete sullo stesso puntatore"
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Quali espressioni utilizzeresti per liberare la memoria allocata da [studenti_list= new students[size]]?",
+		"answers": {
+			"a": "delete []student_list",
+			"b": "delete student_list",
+			"c": "delete []students",
+			"d": "delete students[size]"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Allocazione dinamica e deallocazione"
+	},
+	{
+		"question": "Cos'è il costruttore di copia?",
+		"answers": {
+			"a": "Un costruttore che consente all'utente di mouvere dati da un oggetto ad un altro",
+			"b": "Un costruttore per inizializzare un oggetto con i valori di un altro oggetto",
+			"c": "Un costruttore per verificare se due oggetti sono uguali",
+			"d": "Un costruttore per distruggere altre copie di un oggetto"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Normalizzazione"
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "Se la generalizzazione della figura seguente:<br><br><img src=\"img/17.webp\" class=\"responsive-img\"><br><br>è totale esclusiva,allora:",
+		"question": "Qual'è il modo corretto di dichiarare il costruttore di copia di una classe il cui nome è MyClass?",
 		"answers": {
-			"a": "Ci sono occorrenze di E1 che sono occorrenze sia di E2 che di E3.",
-			"b": "Ci sono occorrenze di E1 che non sono occorrenze nè di E2 nè di E3.",
-			"c": "Ogni occorrenza di E1 è anche occorrenza di E2 che di E3.",
-			"d": "Ogni occorrenza di E1 è anche occorrenza o di E2 o di E3, ma non di entrambe."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Una base di dati relazionale ben progettata:",
-		"answers": {
-			"a": "Presenta la minima ridondanza dei dati possibile.",
-			"b": "Presenta la massima ridondanza dei dati possibile.",
-			"c": "Non presenta mai ridondanze dei dati.",
-			"d": "Presenta sempre almeno una ridondanza dei dati."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Un 'utente finale' per accedere alla base di dati usa tipicamente:",
-		"answers": {
-			"a": "Operazioni predefinite e di frequenza elevata.",
-			"b": "Operazioni non predefinite e di tipo vario.",
-			"c": "Sia operazioni predefinite che operazioni non predefinite.",
-			"d": "Operazioni analoghe a quelle usate tipicamente dagli utenti 'utenti causali'."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Siano r una relazione di grado 3 e s una relazione di grado 2. Se r e s hanno almeno un attributo di ugual nome, allora, detto g il grado del join naturale r*s,",
-		"answers": {
-			"a": "$g < 5 $.",
-			"b": "$g > 5 $.",
-			"c": "$g = 6 $.",
-			"d": "$g = 5 $."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Algebra Relazionale"
-	},
-	{
-		"question": "Lo schema ER della figura seguente:<br><br><img src=\"img/18.webp\" class=\"responsive-img\">",
-		"answers": {
-			"a": "È sicuramente corretto.",
-			"b": "È sicuramente errato.",
-			"c": "Può essere corretto o errato, a seconda della semantica di E1,E2 e R.",
-			"d": "Può essere corretto o errato, a seconda della semantica di E1,E2 e R e dei loro attributi."
+			"a": "MyClass(const MyClass *arg)",
+			"b": "MyClass(const MyClass &arg)",
+			"c": "MyClass(MyClass &arg)",
+			"d": "MyClass(MyClass arg)"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "Con riferimento allo schema ER della seguente figura:<br><br><img src=\"img/19.webp\" class=\"responsive-img\"><br><br>quale delle seguenti affermazioni è certamente vera?",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img22.png' class='responsive-img' alt='Immagine im22.png'>",
 		"answers": {
-			"a": "Ogni occorrenza di E2 deve partecipare a più occorrenze di R.",
-			"b": "Ogni occorrenza di E1 deve partecipare ad almeno un'occorrenza di R.",
-			"c": "Ci possono essere di R a cui non partecipa alcuna occorrenza di E1.",
-			"d": "Ci possono essere occorrenze di E2 che partecipano a una sola occorrenza di R."
+			"a": "Auto assegnamento",
+			"b": "Memory leaks",
+			"c": "Auto assegnamento e memory leaks",
+			"d": "Nessuno"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Qual'è lo scopo del costruttore di movimento e dell'assegnamento di movimento?",
+		"answers": {
+			"a": "Di spostare la proprietà di risorse da un oggetto ad un altro",
+			"b": "Di chimarare il distruttre dell'oggetto mosso",
+			"c": "Di muovere un oggetto da uno scope ad un altro",
+			"d": "Di cambiare la locazione di memoria di un oggetto"
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Quali delle seguenti funzioni sono fornite dal compilatore se non vengono definite dall'utente nella classe? ",
+		"answers": {
+			"a": "Costruttore di default",
+			"b": "Costruttore di copia",
+			"c": "Costruttore di movimento",
+			"d": "Assegnamento di copia",
+			"e": "Assegnamento di movimento",
+			"f": "Distruttore"
+		},
+		"correctAnswer": ["a","b","d","f"],
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Quali sono le differenze tra costruttore di copia e costruttore di movimento?",
+		"answers": {
+			"a": "Il costruttore di copia deve essere definito dall'utente, mentre il costruttore di moviemtno è fornito di default",
+			"b": "Il costruttore di movimento deve essere definito dall'utente, mentre il costruttore di copia è fornito di default",
+			"c": "Il costruttore di moviemnto consente di salvare spazio in memoria, mentre il costruttore di copia no",
+			"d": "Il costruttore di movimento richiede un rvalue come argomento, mentre il costruttore di copia un lvalue",
+			"e": "Il costruttore di movimento richiede un lvalue come argomento, mentre il costruttore di copia un rvalue",
+			"f": "Il costruttore di un costruttore di copia devono essere const, mentre gli argomenti di un costruttore di movimento non devono"
+		},
+		"correctAnswer": ["a","c","d","f"],
+		"reason":"",
+		"category": "Classi inizializzazione, copia e spostamento"
+	},
+	{
+		"question": "Quale è il modo corretto di dichiarare la funzione di assegnamento di movimento di una classe il cui nome è MyClass?",
+		"answers": {
+			"a": "MyClass& MyClass(MyClass&& c)",
+			"b": "MyClass& MyClass::operator=(MyClass& c)",
+			"c": "MyClass& MyClass::operator=(MyClass c)",
+			"d": "MyClass& MyClass::operator=(MyClass&& c)"
 		},
 		"correctAnswer": "d",
 		"reason":"",
-		"category": "Entità-Relazione"
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
-		"question": "Il commando CREATE TABLE di SQL standard:",
+		"question": "Date le seguenti funzioni di classe, che cosa rappresentano rispettivamente? <br> <img src='imgLdP/img23.png' class='responsive-img' alt='Immagine im23.png'>",
 		"answers": {
-			"a": "È un commando di Data Definition Language (DDL).",
-			"b": "È un commando di Data Manipulation Language (DML).",
-			"c": "È sia un commando di DDL che un commando DML.",
-			"d": "Non è né un commando di DDL né un commando DML."
+			"a": "fun1->copy constructor <br>fun2->default assignment <br>fun3->move constructor  <br>fun4->default constructor",
+			"b": "fun1->copy assignment <br>fun2->move assignment <br>fun3->copy constructor <br>fun4->move constructor",
+			"c": "fun1->copy assignment <br>fun2->move assignment <br>fun3->move constructor <br>fun4->copy constructor",
+			"d": "fun1->copy assignment <br>fun2->move assignment <br>fun3->copy destructor <br>fun4->copy constructor"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": "c",
 		"reason":"",
-		"category": "SQL"
-	},
-	{
-		"question": "Con riferimento alla generalizzazione non totale della figura seguente<br><br><img src=\"img/20.webp\" class=\"responsive-img\"><br><br> quale delle seguenti affermazioni è certamente vera?",
-		"answers": {
-			"a": "Ogni occorrenza di E1 è anche occorrenza di E2.",
-			"b": "Ogni occorrenza di E1 è anche occorrenza di E3.",
-			"c": "Ogni occorrenza di E1 è anche occorrenza di almeno una tra E2 e E3.",
-			"d": "Ogni occorrenza di E2 è anche occorrenza di E1."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Perchè lo schema ER della figura seguente<br><br><img src=\"img/21.webp\" class=\"responsive-img\"><br>sia sintatticamente corretto deve essere: ",
-		"answers": {
-			"a": "(X,Y)=(1,N).",
-			"b": "(X,Y)=(0,1).",
-			"c": "(X,Y)=(0,N).",
-			"d": "(X,Y)=(1,1)."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Per lo schema ER della figura seguente<br><br><img src=\"img/22.webp\" class=\"responsive-img\"><br>è stata preparata la tavola dei volumi<br><div class='table-responsive'><div class='table-responsive'><table class=\"table table-bordered\"><tbody><tr><th>Concetto</th><th>Tipo</th><th>Volume</th></tr><tr><td>E1</td><td>E</td><td>10</td></tr><tr><td>E2</td><td>E</td><td>20</td></tr><tr><td>E3</td><td>E</td><td>5</td></tr><tr><td>R</td><td>R</td><td>X</td></tr></tbody></table></div></div>Quale valore deve avere X perchè la tavola dei volumi sia corretta?",
-		"answers": {
-			"a": "10.",
-			"b": "20.",
-			"c": "5.",
-			"d": "Non abbiamo sufficienti elementi per rispondere."
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Tabelle Volumi"
-	},
-	{
-		"question": "Se l'attributo A2 è opzionale multivalore, allora:",
-		"answers": {
-			"a": "XY = (0,1).",
-			"b": "XY = (0,n).",
-			"c": "XY = (1,1).",
-			"d": "XY = (1,n)."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Entità-Relazione"
-	},
-	{
-		"question": "Quale operazione insiemistica NON richiede che i suoi operandi siano compatibili all'unione?",
-		"answers": {
-			"a": "Unione.",
-			"b": "Intersezione.",
-			"c": "Differenza.",
-			"d": "Prodotto cartesiano."
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Classi inizializzazione, copia e spostamento"
 	},
 	{
 		"question": "Quale dei seguenti modelli di dati <u>non</u> è un modello logico?",
