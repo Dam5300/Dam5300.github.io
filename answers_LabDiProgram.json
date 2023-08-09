@@ -245,7 +245,7 @@
 		"category": "Header, scope e namespace"
 	},
 	{
-		"question": "cHE COS'è LO \"SCOPE\" in un programma ?",
+		"question": "che cos'è lo \"SCOPE\" in un programma ?",
 		"answers": {
 			"a": "una regione di testo ",
 			"b": "un insieme di variabili",
@@ -585,112 +585,114 @@
 		"category": "Classi"
 	},
 	{
-		"question": "Nella figura seguente<br><img src='img/8.webp' class='responsive-img' alt='Immagine 8.webp'> <br> è rappresentato:",
+	"question": "Per quali dei seguenti operatori non si può fare l'overloading?",
 		"answers": {
-			"a": "Uno schema Entità-Associazione",
-			"b": "Uno schema relazionale",
-			"c": "Un modello relazionale",
-			"d": "Un modello Entità-Associazione"
+			"a": ".(Member Access or Dot Operator)",
+			"b": "+(Addition operator)",
+			"c": "::(Scope resolution operator)",
+			"d": "<< (Output Stream Operator)",
+			"e" : ">> (Input Stream Operator)"
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "Overloading operatori"
+	},
+	{
+		"question": "Quali dei seguenti operatori hanno un overloading di default dal compilatore in ogni classe definita dall'utente ?",
+		"answers": {
+			"a": "== (Comparison Operator)",
+			"b": "= (Assignment Operator)",
+			"c": ".(Member Access or Dot Operator)",
+			"d": "<< (Output Stream Operator)",
+			"e" : ">> (Input Stream Operator)"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Teoria"
+		"category": "Overloading operatori"
 	},
 	{
-		"question": "Sia R(X) uno schema di relazione. La dipendenza funzionale $Y \\to Z$ definita su R si dice banale se: ",
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img12.png' class='responsive-img' alt='Immagine img12.png'>",
 		"answers": {
-			"a": "$Y \\supseteq Z$",
-			"b": "$Z \\supset Y$",
-			"c": "$Y \\cap Z=0$",
-			"d": "$Y \\cup Z=X$"
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Dipendenze Funzionali"
-	},
-	{
-		"question": "La migliore traduzione possibile dello schema ER ristrutturato della figura seguente<br><img src='img/10.webp' style='max-width: 100%; height: auto;' alt='Immagine 10.webp'><br> verso il modello logico relazionale porta agli schemi di relazione:",
-		"answers": {
-			"a": "E1(<u>A11</u>,A21,A12) e E2 (<u>A21</u>,A22)",
-			"b": "E1(<u>A11</u>,<u>A21</u>,A12) e E2 (<u>A21</u>,A22)",
-			"c": "E1(<u>A11</u>,A12) e E2 (<u>A21</u>,<u>A11</u>,A22)",
-			"d": "E1(<u>A11</u>,A12) e E2 (<u>A21</u>,A22)"
-		},
-		"correctAnswer": "a",
-		"reason":"",
-		"category": "Schema Relazionale"
-	},
-	{
-		"question": "Sia R(<u>A</u>,<u>B</u>,C,D) uno schema di relazione, con chiave primaria sottolineata. La dipendenza funzionale:<br>(A,B,C) $\\to$ D ",
-		"answers": {
-			"a": "È sicuramente completa.",
-			"b": "È sicuramente parziale.",
-			"c": "Potrebbe essere o no completa dipende dalla sematica degli attriburi.",
-			"d": "Potrebbe essere o no completa: non abbiamo sufficienti elementi per rispondere."
-		},
-		"correctAnswer": "b",
-		"reason":"",
-		"category": "Dipendenze Funzionali"
-	},
-	{
-		"question": "Sia R(A,B,C) uno schema relazionale con attributi tutti interi, implementato in SQL standard nella tabella R. L’espressione $\\Pi_A(\\sigma_{c=1}(R))$ corrisponde all'interrogazione SQL:",
-		"answers": {
-			"a": "SELECT * FROM R WHERE C=1;",
-			"b": "SELECT A FROM R WHERE C=1;",
-			"c": "SELECT A FROM R;",
-			"d": "SELECT DISTINCT A FROM R WHERE C=1;"
-		},
-		"correctAnswer": "d",
-		"reason":"",
-		"category": "SQL"
-	},
-	{
-		"question": "C'è differenza tra 'DBMS' e 'base di dati' ?",
-		"answers": {
-			"a": "No, sono entrambi sistemi software.",
-			"b": "No, sono entrambi collezione di dati.",
-			"c": "Si, un DBMS è un sistema software, mentre una base di dati è una collezione di dati.",
-			"d": "Si, un DBMS è una collezione di dati,mentre una base di dati è un sistema software."
+			"a": "2",
+			"b": "5",
+			"c": "Niente",
+			"d": "Errore"
 		},
 		"correctAnswer": "c",
 		"reason":"",
-		"category": "Teoria"
+		"category": "Overloading operatori"
 	},
 	{
-		"question": "Sia $R(A_1 ,A_2, A_3, A_4)$ uno schema di relazione. Se $\\{A_1,A_2\\}$ è una chiave di R, allora $\\{A_1,A_2,A_3\\}$ è:",
+		"question": "Qual'è la sintesi corretta per l'overloading dell'operatore + della classe A ?",
 		"answers": {
-			"a": "Nè chiave nè superchiave di R",
-			"b": "Sia superchiave che chiave di R",
-			"c": "Chiave di R",
-			"d": "Superchiave ma non chiave di R"
+			"a": "A operator +(argument_list){}",
+			"b": "A operator[+](argument_list){}",
+			"c": "int +(argument_list){}",
+			"d": "int[+](argument_list){}"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": "a",
 		"reason":"",
-		"category": "Schema Relazionale"
+		"category": "Overloading operatori"
 	},
 	{
-		"question": "Quando possono presentarsi potenziali violazioni dei vincoli di integrità di una base dei dati?",
+		"question": "cos'è un operatore binario?",
 		"answers": {
-			"a": "Mai",
-			"b": "Solo in presenza di operazioni di interrogazione",
-			"c": "Solo in presenza di operazioni di aggiornamento",
-			"d": "Sia in presenza di operazioni di interrogazione che in presenza di operazioni di aggiornamento."
-		},
-		"correctAnswer": "c",
-		"reason":"",
-		"category": "Teoria"
-	},
-	{
-		"question": "Sia R(A,B) uno schema di relazione e r una sua generica istanza $\\sigma_{A=1 \\;OR\\; B=O}(r)$ è equivalente a:",
-		"answers": {
-			"a": "$\\sigma_{A=1}(r)\\cap\\sigma_{B=0}(r)$",
-			"b": "$\\sigma_{A=1}(r)\\cup\\sigma_{B=0}(r)$",
-			"c": "$\\sigma_{A=1}(\\sigma_{B=0}(r))$",
-			"d": "$\\sigma_{A=0}(\\sigma_{B=1}(r))$"
+			"a": "Un operatore che esegue un'azione su un singolo operando",
+			"b": "Un operatore che esegue un'azione su due operandi",
+			"c": "Un operatore che esegue un'azione su tre operandi",
+			"d": "Un operatore che esegue un'azione su un numero qualsiasi operandi"
 		},
 		"correctAnswer": "b",
 		"reason":"",
-		"category": "Algebra Relazionale"
+		"category": "Overloading operatori"
+	},
+	{
+		"question": "Quali dei seguenti rappresentano metodi di overloading validi in C++ ?",
+		"answers": {
+			"a": "Sovraccarico di operandi unari",
+			"b": "Sovraccarico di operandi binari",
+			"c": "Sovraccarico di operandi unari come friend function",
+			"d": "Sovraccarico di operandi binari come friend function"
+		},
+		"correctAnswer": ["b","d"],
+		"reason":"",
+		"category": "Overloading operatori"
+	},
+	{
+		"question": "Nel caso di funzioni membro non-statiche, quanti argomenti può ricevere al massimo l'verloading dell'operatore di unario?",
+		"answers": {
+			"a": "1",
+			"b": "2",
+			"c": "3",
+			"d": "0"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Overloading operatori"
+	},
+	{
+		"question": "Nel caso di funzioni membro non-statiche, quanti argomenti può ricevere al massimo l'overloading di un operatore binario?",
+		"answers": {
+			"a": "1",
+			"b": "2",
+			"c": "3",
+			"d": "0"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Overloading operatori"
+	},
+	{
+		"question": "Dato il seguente codice in C++. Come definireste l'operatore di diseguaglianza < come funzione membro della classe Box così che, quando le variabili b1 e b2 sono comparate nel blocco if, il programma restituisca il risultato corretto? <br><img src='imgLdP/img13.png' class='responsive-img' alt='Immagine img13.png'> ",
+		"answers": {
+			"a": "bool operator< (Box b) { return this->capacity < b.capacity ? true : false; }",
+			"b": "bool operator< (Box b) { return b.capacity < this->capacity ? true : false; }",
+			"c": "bool operator< (Box b1, Box b2) { return b1.capacity < b2.capacity ? true : false; }",
+			"d": "bool operator< (Box b) { return this < b ? true : false; }"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Overloading operatori"
 	},
 	{
 		"question": "Nell'ipotesi che (X,Y) indichi la cardinalità di partecipazione di un'entità a un'associazione, quale dei seguenti valori è <b>certamente errato</b>?",
