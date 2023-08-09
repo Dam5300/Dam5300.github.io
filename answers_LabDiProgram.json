@@ -1449,6 +1449,151 @@
 		"correctAnswer": ["a","c"],
 		"reason":"",
 		"category": "Template"
+	},
+	{
+		"question": "Qual'è il comando git per scaricare una repository dal server al vostro computer?",
+		"answers": {
+			"a": "git push",
+			"b": "git fork",
+			"c": "git clone",
+			"d": "git commit"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Quale file nascosto può essere configurato per assicurarsi che alcuni tipi di file non vengano mai inclusi durante il commit di una Git repository locale?",
+		"answers": {
+			"a": "ignore.git",
+			"b": ".gitignore",
+			"c": "gitignore.txt",
+			"d": "git.ignore"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Qual è il comando git per caricare nella staging area solo i file con estensione .cpp?",
+		"answers": {
+			"a": "git add *.cpp",
+			"b": "git add -a .cpp",
+			"c": "git add- *.cpp",
+			"d": "Non é possibile filtrare i file da caricare nella staging area sulla base dell'estensione"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Quali sono i comandi git per creare un nuovo branch chiamato my_branch?",
+		"answers": {
+			"a": "git --branch my_branch",
+			"b": "git -b my_branch",
+			"c": "git branch my_branch",
+			"d": "git branch -n my_branch",
+			"e": "git checkout -b my_branch"
+		},
+		"correctAnswer": ["c","e"],
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Qual è il comando git per caricare nel server dei cambiamenti al codice?",
+		"answers": {
+			"a": "git push",
+			"b": "git add",
+			"c": "git upload",
+			"d": "git status"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Qual è il comando git per controllare lo stato della propria repository locale rispetto all'ultimo commit?",
+		"answers": {
+			"a": "git check",
+			"b": "git status",
+			"c": "git diff",
+			"d": "git pull"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Qual è il comando git per salvare il codice presente nella staging area prima di caricare il software sul server?",
+		"answers": {
+			"a": "git commit",
+			"b": "git add",
+			"c": "git init",
+			"d": "git push"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Quali dei seguenti comandi git consente di caricare velocemente tutto il codice in locale nella staging area?",
+		"answers": {
+			"a": "git commit add",
+			"b": "git add",
+			"c": "git commit",
+			"d": "git commit -a"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Quali dei seguenti comandi consentono di includere un messaggio descrittivo dei cambiamenti al codice appena salvati?",
+		"answers": {
+			"a": "git message “I am coding”",
+			"b": "git add “I am coding”",
+			"c": "git commit “I am coding”",
+			"d": "git commit -m “I am coding”"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Avete appena creato il file index.cpp. Quale dei seguenti comandi consente di caricare quel file nella staging area prima di un commit?",
+		"answers": {
+			"a": "git add index.cpp",
+			"b": "git add",
+			"c": "git add new",
+			"d": "git commit index.cpp"
+		},
+		"correctAnswer": ["a","b"],
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Dopo aver installato Git e prima di eseguire il vostro primo commit, quali delle seguenti proprietà lo strumento si aspetta che siano configurate?",
+		"answers": {
+			"a": "username e email",
+			"b": "username e password",
+			"c": "email e password",
+			"d": "username e indirizzo IP"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "GIT"
+	},
+	{
+		"question": "Quale comando git consente di creare e inizializzare una nuova Git repository?",
+		"answers": {
+			"a": "git bash",
+			"b": "git install",
+			"c": "git init",
+			"d": "git start"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "GIT"
 	}
 	
 ]
