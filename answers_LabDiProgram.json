@@ -1907,5 +1907,89 @@
 		"correctAnswer": "c",
 		"reason":"",
 		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è la definizione di una funzione con Basic Guarantee?",
+		"answers": {
+			"a": "Una funzione che in caso di fallimento non lancia una eccezione",
+			"b": "Una funzione che in caso di fallimento non genera memory leak e non lancia eccezioni",
+			"c": "Una funzione che in caso di fallimento non genera memory leak",
+			"d": "Una funzione che in caso di fallimento non interrompe il programma"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Gestione delle risorse"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img47.png' class='responsive-img' alt='Immagine img47.png'>",
+		"answers": {
+			"a": "Basic Guarantee",
+			"b": "Strong Guarantee",
+			"c": "No-throw Guarantee",
+			"d": "Nessuna garanzia"
+		},
+		"correctAnswer": ["a","b"],
+		"reason":"",
+		"category": "Gestione delle risorse"
+	},
+	{
+		"question": "Quali delle seguenti affermazioni sono vere riguardo le differenze fra Basic Guarantee (BG) e Strong Guarantee (SG)?",
+		"answers": {
+			"a": "BG non lancia eccezioni, mentre SG si",
+			"b": "In caso di fallimento, BG non modifica i valori osservabili, mentre SG può",
+			"c": "In caso di fallimento, SG non modifica i valori osservabili, mentre BG può",
+			"d": "In caso di fallimento, SG non genera memory leak, mentre BG può"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Gestione delle risorse"
+	},
+	{
+		"question": "Quale espressione è utilizzata per catturare ogni tipo di eccezione",
+		"answers": {
+			"a": "catch()",
+			"b": "catch(Exception e)",
+			"c": "catch(...)",
+			"d": "catch(Exception)"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Gestione delle risorse"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img45.png' class='responsive-img' alt='Immagine img45.png'>",
+		"answers": {
+			"a": "-1",
+			"b": "ptr is NULL",
+			"c": "Exception occurred: exiting",
+			"d": "Errore"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Gestione delle risorse"
+	},
+	{
+		"question": "Quale parola chiave è utilizzata per controllare la presenza di una eccezione in un blocco di codice?",
+		"answers": {
+			"a": "catch",
+			"b": "throw",
+			"c": "try",
+			"d": "handlers"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Gestione delle risorse"
+	},
+	{
+		"question": "Che garanzie ha la seguente funzione? <br><img src='imgLdP/img46.png' class='responsive-img' alt='Immagine img46.png'>?",
+		"answers": {
+			"a": "Basic Guarantee",
+			"b": "Strong Guarantee",
+			"c": "No-throw Guarantee",
+			"d": "Nessuna garanzia"
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "Gestione delle risorse"
 	}
 ]
