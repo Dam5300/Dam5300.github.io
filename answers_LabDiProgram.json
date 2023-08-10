@@ -1737,7 +1737,175 @@
 		"correctAnswer": ["c","d"],
 		"reason":"",
 		"category": "STL"
+	},
+	{
+		"question": "Che cos'è l'ereditarità in C++?",
+		"answers": {
+			"a": "Il raggruppamento di dati all'interno di una singola classe",
+			"b": "La possibilità di derivare nuove classi da una classe esistente",
+			"c": "L'operazione di overloading di classi intere;",
+			"d": "La possibilità di avere classi con lo stesso nome"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img37.PNG' class='responsive-img' alt='Immagine img37.PNG'>",
+		"answers": {
+			"a": "A's Constructor",
+			"b": "Present inside the class B",
+			"c": "A's Constructor <br> present inside the class B",
+			"d": "Errore"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img38.PNG' class='responsive-img' alt='Immagine img38.PNG'>",
+		"answers": {
+			"a": "Inside P",
+			"b": "Inside Q",
+			"c": "Niente",
+			"d": "Errore"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img39.PNG' class='responsive-img' alt='Immagine img39.PNG'>",
+		"answers": {
+			"a": "i = 0 j = 0",
+			"b": "i = j =",
+			"c": "Ninte",
+			"d": "Errore"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img40.PNG' class='responsive-img' alt='Immagine img40.PNG'>",
+		"answers": {
+			"a": "Nessun errore",
+			"b": "Errore dovuto alla linea [Base *bp = new Derived;]",
+			"c": "Errore dovuto alla linea [Derived *dp = new Base;]",
+			"d": "Nessuna delle precedenti"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img41.PNG' class='responsive-img' alt='Immagine img41.PNG'>",
+		"answers": {
+			"a": "This is Derived class <br> This is Base class",
+			"b": "This is Base class <br> This is Derived class",
+			"c": "This is Base class <br> This is Base class",
+			"d": "Errore"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Quale parola chiave rende i dati membro e le funzioni di una classe base inaccessibili ad una classe derivata da essa?",
+		"answers": {
+			"a": "private",
+			"b": "protected",
+			"c": "public",
+			"d": "sia private che protected"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qaule parola chiave è utilizzata per disabilitare la funzione mebro di una classe base",
+		"answers": {
+			"a": "void",
+			"b": "virtual",
+			"c": "delete",
+			"d": "null"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Quali funzioni membro di una classe base devono essere disabilitate per evitare il problema dello slicing",
+		"answers": {
+			"a": "Il costruttore di Default",
+			"b": "Il costruttore di copia",
+			"c": "L'assegnamento di copia",
+			"d": "Il costruttore di movimento",
+			"e": "L'assegnamento di movimento",
+			"f": "Il distruttore"
+		},
+		"correctAnswer": ["b","c"],
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img42.PNG' class='responsive-img' alt='Immagine img42.PNG'>",
+		"answers": {
+			"a": "1010",
+			"b": "1510",
+			"c": "1515",
+			"d": "5110"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Che cos'è una funzione virtuale?",
+		"answers": {
+			"a": "Una funzione membro di una classe base",
+			"b": "Una funzione che viene derivata da una classe base",
+			"c": "Una funzione della classe derivata che accade ai dati membro della classe base",
+			"d": "Una funzione dichiarata nella classe base e di cui viene effettuato l'override nella classe derivata"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img43.PNG' class='responsive-img' alt='Immagine img43.PNG'>",
+		"answers": {
+			"a": "Hello this is class B",
+			"b": "Hello this is class A",
+			"c": "Hello this is class A <br> Hello this is class B",
+			"d": "Errore"
+		},
+		"correctAnswer": "d",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Che cos'è una funzione virtuale pura?",
+		"answers": {
+			"a": "Una funzione virtuale implementata nella classe base",
+			"b": "Una funzione visrtuale che non può essere implementata nella classe base",
+			"c": "Una funzione virtuale che non può essere implementata nella classe derivata",
+			"d": "Ogni funzione esplicitamente dichiarata come virtual"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "Ereditarietà"
+	},
+	{
+		"question": "Quale concetto di programmazione è implementato tramite le funzioni virtuali?",
+		"answers": {
+			"a": "Incapsulamento",
+			"b": "Polimorfismo a tempo di compilazione",
+			"c": "Polimorfismo a tempo di esecuzione",
+			"d": "Astrazione"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "Ereditarietà"
 	}
-
-	
 ]
