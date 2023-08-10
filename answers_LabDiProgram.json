@@ -1594,6 +1594,150 @@
 		"correctAnswer": "c",
 		"reason":"",
 		"category": "GIT"
+	},
+	{
+		"question": "Qual'è il modo corretto di inizializzare uno standard vector di numeri interi?",
+		"answers": {
+			"a": "vector<integer> vecOfints;",
+			"b": "vector(int) vecOfInts;",
+			"c": "std::vector<int> vecOfInts;",
+			"d": "std::vector(int) vecOfInts;"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Dati vector<char>s1 contenente \"David\" e vector<char>s2 \"Daniel\", quale delle seguenti operazioni è corretta?",
+		"answers": {
+			"a": "Il risultato di s1 == s2 è falso",
+			"b": "std::cout <<s1 visualizzerà \"D\"",
+			"c": "std::cout << s1+s2 visualizzarà \"DavidDaniel\"",
+			"d": "E' possibile creare un iteratore per s1"
+		},
+		"correctAnswer": ["a","d"],
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Dati list<char>s1 contenente \"David\" e list<char>s2 \"Daniel\", quale delle seguenti operazioni è corretta??",
+		"answers": {
+			"a": "Il risultato di s1 == s2 è falso",
+			"b": "Gli operatori di insert() e erase() non sono molto efficienti",
+			"c": "std::cout <<s1[0] visualizzerà \"D\"",
+			"d": "E' possibile creare un iteratore per s1"
+		},
+		"correctAnswer": ["a","d"],
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Dati char s1[] = “David” and char s2[] = “Daniel”, quali delle seguenti affermazioni sono vere?",
+		"answers": {
+			"a": "Il risultato di s1 == s2 è falso",
+			"b": "std::cout << s1 visualiizzerà \"D\" ",
+			"c": "std::cout << *s2 \"D\"",
+			"d": "std::cout << *(s2+1) restituirà errore"
+		},
+		"correctAnswer": ["a","c"],
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Qual'è l'output del seguente programma <br><img src='imgLdP/img36.PNG' class='responsive-img' alt='Immagine img36.PNG'>?",
+		"answers": {
+			"a": "30",
+			"b": "40",
+			"c": "50",
+			"d": "60",
+			"e": "Errore"
+		},
+		"correctAnswer": "c",
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Che cosa utilizza C++ per implementare gli iteratori?",
+		"answers": {
+			"a": "Puntatori",
+			"b": "Valori scalari",
+			"c": "Liste",
+			"d": "Array"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Quali operatori sono implementati in C++ per gli iteratori?",
+		"answers": {
+			"a": "++",
+			"b": "--",
+			"c": "**",
+			"d": "*",
+			"e": "!",
+			"f": "+=",
+			"g": "-=",
+			"h": "/",
+			"i": "==",
+			"j": "!=",
+			"l": "&",
+			"m": "<<",
+			"n": ">>"
+		},
+		"correctAnswer": ["a","b","d","f","g","i","j"],
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Che cos'è un iteratore?",
+		"answers": {
+			"a": "Un componente di STL utilizzato per puntare ad un indirizzo di memoria di un container",
+			"b": "Un componente di STL utilizzato esclusivamente dagli standard vectors",
+			"c": "Un componente di STL utilizzato per chiamare efficientemente le funzioni",
+			"d": "Un componente di STL utilizzato per creare classi template"
+		},
+		"correctAnswer": "a",
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Con che operatore si ottiene il valore a cui fa riferimento un iteratore",
+		"answers": {
+			"a": "&",
+			"b": "*",
+			"c": "[]",
+			"d": "()"
+		},
+		"correctAnswer": "b",
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Se v è un vector<int>, quali dei seguenti rappresentano dei modi corretti per creare un iteratore per v?",
+		"answers": {
+			"a": "vector<int>::iterator it;",
+			"b": "vector<int>::iterator it = v.begin();",
+			"c": "iterator it = v.begin();",
+			"d": "auto it = v.begin();",
+			"e": "auto iterator it"
+		},
+		"correctAnswer": ["a","d"],
+		"reason":"",
+		"category": "STL"
+	},
+	{
+		"question": "Quali delle seguenti dichiarazioni è corretta?",
+		"answers": {
+			"a": "char s[10]; auto it = s.begin();",
+			"b": "char s[10]; char::iterator it = begin(s);",
+			"c": "vector<char> s; auto it = s.begin();",
+			"d": "list<char> s; list<char>::iterator it = s.begin();"
+		},
+		"correctAnswer": ["c","d"],
+		"reason":"",
+		"category": "STL"
 	}
+
 	
 ]
