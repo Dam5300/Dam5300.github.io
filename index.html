@@ -155,21 +155,24 @@
 			
 			let done = JSON.parse(sessionStorage.getItem('done'));
 			let count = 0;
-			
-			//FILE JSON CON LE RISPOSTE
+		
+			// Recupera le risposte corrette da correctAnswers
+			let correctAnswers = [];
+			data.forEach(element => {
+				correctAnswers.push(element.correctAnswer);
+			});
+		
 			fetch("answers_LabDiProgram.json")
 				.then(res => res.json())
 				.then(data => {
 					auxSet.forEach(i => {
-						const selectedInputs = document.querySelectorAll("input[name='" + i + "']:checked");
-						if (selectedInputs.length === 0) {
+						const selectedCheckboxes = document.querySelectorAll("input[name='" + i + "']:checked");
+						if (selectedCheckboxes.length === 0) {
 							// L'utente non ha selezionato alcuna risposta
 						} else {
-							const selectedCheckboxes = document.querySelectorAll("input[name='" + i + "']:checked");
 							const selectedValues = Array.from(selectedCheckboxes).map(checkbox => checkbox.value);
-
-							
-							const isAllCorrect = selectedValues.every(selectedValue => correctAnswers.includes(selectedValue));
+		
+							const isAllCorrect = selectedValues.every(selectedValue => correctAnswers[i].includes(selectedValue));
 							
 							if (isAllCorrect) {
 								done.push(i);
@@ -181,7 +184,7 @@
 								});
 							}
 							
-							correctAnswers.forEach(correctAnswer => {
+							correctAnswers[i].forEach(correctAnswer => {
 								const radio = document.getElementById(i + correctAnswer);
 								radio.innerHTML += "<tab> &#9989";
 								radio.classList.add("alert");
