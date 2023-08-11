@@ -121,28 +121,30 @@
 
 			let n=0
 			
-			auxSet.forEach(i=>{
-				n++
-				let element=data[i]
-				let random_quest=[]
-				Object.keys(element.answers).forEach(e=>{
-						random_quest.push("<div class='form-check'>"+
-									"<input class='form-check-input' type='radio' name='"+i+"' value='"+e+"'>"+
-									"<label class='form-check-label' id='"+(i+e)+"'>"+element.answers[e]+"</label>"+
-								"</div>")
-					})
-				random_quest=random_quest.sort((a, b) => 0.5 - Math.random())
-				let radios=random_quest.join("");
+			auxSet.forEach(i => {
+				n++;
+				let element = data[i];
+				let random_checkboxes = [];
 				
-
-			
-				quiz.innerHTML+="<div class='card text-center shadow-sm' style='margin-top:2em'>"+
-						"<div class='card-header'>Domanda "+n+"</div>"+
-						"<div class='card-body'>"+
-							"<h6 class='card-title' style='margin-bottom: 1.8em; line-height:2em'>"+element.question+"</h6>"+
-								"<div class='card-text' style='text-align:left'>"+radios+"</div>"+
-						"</div>"+	
-						"<div class='card-footer text-muted'>Categoria: "+element.category+"</div>"
+				Object.keys(element.answers).forEach(e => {
+					random_checkboxes.push(
+						"<div class='form-check'>" +
+						"<input class='form-check-input' type='checkbox' name='" + i + "' value='" + e + "'>" +
+						"<label class='form-check-label' id='" + (i + e) + "'>" + element.answers[e] + "</label>" +
+						"</div>"
+					);
+				});
+				
+				let checkboxes_html = random_checkboxes.join("");
+				
+				quiz.innerHTML +=
+					"<div class='card text-center shadow-sm' style='margin-top:2em'>" +
+					"<div class='card-header'>Domanda " + n + "</div>" +
+					"<div class='card-body'>" +
+					"<h6 class='card-title' style='margin-bottom: 1.8em; line-height:2em'>" + element.question + "</h6>" +
+					"<div class='card-text' style='text-align:left'>" + checkboxes_html + "</div>" +
+					"</div>" +
+					"<div class='card-footer text-muted'>Categoria: " + element.category + "</div>";
 			})
 		})
 
@@ -163,10 +165,11 @@
 						if (selectedInputs.length === 0) {
 							// L'utente non ha selezionato alcuna risposta
 						} else {
-							const selectedValues = Array.from(selectedInputs).map(input => input.value);
-							const correctAnswers = data[i].correctAnswer;
+							const selectedCheckboxes = document.querySelectorAll("input[name='" + i + "']:checked");
+							const selectedValues = Array.from(selectedCheckboxes).map(checkbox => checkbox.value);
+
 							
-							const isAllCorrect = correctAnswers.every(correctAnswer => selectedValues.includes(correctAnswer));
+							const isAllCorrect = selectedValues.every(selectedValue => correctAnswers.includes(selectedValue));
 							
 							if (isAllCorrect) {
 								done.push(i);
