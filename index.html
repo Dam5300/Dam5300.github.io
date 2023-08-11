@@ -146,37 +146,60 @@
 			})
 		})
 
-		function check(){
-			if(sessionStorage.getItem('done')==null){
-				sessionStorage.setItem('done',JSON.stringify([]))
+		function check() {
+			if (sessionStorage.getItem('done') == null) {
+				sessionStorage.setItem('done', JSON.stringify([]));
 			}
-			let done = JSON.parse(sessionStorage.getItem('done'))
-			let count=0
-			fetch("answers.json").then(res=>res.json()).then(data=>{
-				auxSet.forEach(i=>{
-				if(document.querySelector("input[name='"+i+"']:checked")==null){}
-				else if(document.querySelector("input[name='"+i+"']:checked").value==data[i].correctAnswer){
-						done.push(i)
-						count++
+			
+			let done = JSON.parse(sessionStorage.getItem('done'));
+			let count = 0;
+			
+			fetch("answers.json")
+				.then(res => res.json())
+				.then(data => {
+					auxSet.forEach(i => {
+						const selectedInputs = document.querySelectorAll("input[name='" + i + "']:checked");
+						if (selectedInputs.length === 0) {
+							// L'utente non ha selezionato alcuna risposta
+						} else {
+							const selectedValues = Array.from(selectedInputs).map(input => input.value);
+							const correctAnswers = data[i].correctAnswer;
+							
+							const isAllCorrect = correctAnswers.every(correctAnswer => selectedValues.includes(correctAnswer));
+							
+							if (isAllCorrect) {
+								done.push(i);
+								count++;
+							} else {
+								selectedValues.forEach(value => {
+									const elementId = i + value;
+									document.getElementById(elementId).innerHTML += "<tab> &#10060";
+								});
+							}
+							
+							correctAnswers.forEach(correctAnswer => {
+								const radio = document.getElementById(i + correctAnswer);
+								radio.innerHTML += "<tab> &#9989";
+								radio.classList.add("alert");
+								radio.classList.add("alert-success");
+							});
+						}
+					});
+					
+					let ris = "";
+					if (count > 17) {
+						ris = goodEmoji[Math.floor(Math.random() * goodEmoji.length)];
+					} else {
+						ris = badEmoji[Math.floor(Math.random() * badEmoji.length)];
 					}
-				else{
-					let value=document.querySelector("input[name='"+i+"']:checked").value
-					document.getElementById(i+value).innerHTML+="<tab> &#10060"
-				}
-				let radio=document.getElementById(i+data[i].correctAnswer)
-				radio.innerHTML+="<tab> &#9989"
-				radio.classList.add("alert")
-				radio.classList.add("alert-success")
-				})
-				let ris=""
-				if(count>17){ris=goodEmoji[Math.floor(Math.random() * goodEmoji.length)]}
-				else{ris=badEmoji[Math.floor(Math.random() * badEmoji.length)]}
-				document.getElementById("ris").innerHTML="<h3 style='text-align:center; margin-top:2em'>Risultato: "+count+"/"+numQuest+" "+ris+"</h3>"
-				document.getElementById("submit").disabled=true
-				document.getElementById("refresh").style["display"]="inline-block"
-				sessionStorage.setItem('done',JSON.stringify(done))
-			})	
-		}
+					
+					document.getElementById("ris").innerHTML = "<h3 style='text-align:center; margin-top:2em'>Risultato: " + count + "/" + numQuest + " " + ris + "</h3>";
+					document.getElementById("submit").disabled = true;
+					document.getElementById("refresh").style["display"] = "inline-block";
+					
+					sessionStorage.setItem('done', JSON.stringify(done));
+				});
+		}		
 	</script>
 
     <footer class="py-3">
