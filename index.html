@@ -154,7 +154,8 @@
 			let done = JSON.parse(sessionStorage.getItem('done'));
 			let count = 0;
 			
-			fetch("answers.json")
+			//FILE JSON CON LE RISPOSTE
+			fetch("answers_LabDiProgram.json")
 				.then(res => res.json())
 				.then(data => {
 					auxSet.forEach(i => {
