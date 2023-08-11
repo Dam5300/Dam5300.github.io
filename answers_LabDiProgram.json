@@ -7,7 +7,7 @@
 			"c": "Nessuna, poichè darà errore in compilazione",
 			"d": "Nessuna delle precedenti."
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"Prova ",
 		"category": "Variabili e Tipi"
 	},
@@ -31,7 +31,7 @@
 			"c": "String",
 			"d": "myString"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -44,7 +44,7 @@
 			"d": "#include &lt;inputstr&gt;"
 
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -56,7 +56,7 @@
 			"c": "std::cout<<\"Hello Word\"",
 			"d": "Console.WriteLine(\"Hello Word\")"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -80,7 +80,7 @@
 			"c": "dalla funzione void",
 			"d": "dalla funzione else"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -92,7 +92,7 @@
 			"c": "VAR_1234",
 			"d": "$var_name"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -104,7 +104,7 @@
 			"c": "Linus Torvalds",
 			"d": "Brian Kernighan"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -116,7 +116,7 @@
 			"c": "Processore -> Compilatore -> Linker",
 			"d": "Nessuna delle precedenti."
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Variabili e Tipi"
 	},
@@ -129,7 +129,7 @@
 			"d": "1 1 <br> 2 4 <br> 1 1 <br> 1 1 <br> 2 4 ",
 			"e": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -141,7 +141,7 @@
 			"c": "Il secondo è noto durante la compilazione, il primo solo in esecuzione",
 			"d": "constexpr non è un comando di C++"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -153,7 +153,7 @@
 			"c": "57",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -166,7 +166,7 @@
 			"d": "double sqrt(double)",
 			"e": "int add (int a, int b) { return a+b; }"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -178,7 +178,7 @@
 			"c": "Un'entità.",
 			"d": "Una generalizzazione."
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -190,7 +190,7 @@
 			"c": "Il secondo è preferibile perchè ha un tipo",
 			"d": "#define non è una keyword di C++ ma solo in C"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -202,7 +202,7 @@
 			"c": "std::cin >> N",
 			"d": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -214,7 +214,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Espressioni, Istruzioni, dichiarazioni, definizioni"
 	},
@@ -226,7 +226,7 @@
 			"c": "Un namespace è utilizzato per separare gli elementi all'interno di una classe",
 			"d": "Un name space è utilizzato per identificare l'inizio e la fine di un programma"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -252,7 +252,7 @@
 			"c": "uno strumento di debugging",
 			"d": "l'insieme di tutte le dichiarazioni delle funzioni"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -264,7 +264,7 @@
 			"c": "Errore",
 			"d": "105"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -277,7 +277,7 @@
 			"c": "La funzione main",
 			"d": "La sezione dell'header"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -289,7 +289,7 @@
 			"c": "00",
 			"d": "10"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -301,7 +301,7 @@
 			"c": "namespace#function",
 			"d": "namespace$function"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -313,7 +313,7 @@
 			"c": "Polimorfismo",
 			"d": "Modularità"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -325,7 +325,7 @@
 			"c": "namespace name{};",
 			"d": "typedef namespace name{} NAME"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -337,7 +337,7 @@
 			"c": "#include file",
 			"d": "#include file.h"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -349,7 +349,7 @@
 			"c": "const x",
 			"d": "static x"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Header, scope e namespace"
 	},
@@ -360,8 +360,8 @@
 			"b": "Con l'operatore &",
 			"c": "Con l'operatore *",
 			"d": "Cpn la parola chiave REF"
-		},
-		"correctAnswer": "b",
+		},	
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -388,7 +388,7 @@
 			"c": "Un errore viene lanciato in compilazione",
 			"d": "Un errore viene lanciato in esecuzione"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -400,7 +400,7 @@
 			"c": "E' un area della memoria non strutturata",
 			"d": "Non è un area della memoria"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -412,7 +412,7 @@
 			"c": "Una variabile locale o globale che mantiene il suo valore al di fuori dello scope",
 			"d": "Una variabile locale o globale che mantiene il suo valore al di fuori del programma"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -424,7 +424,7 @@
 			"c": "Un indirizzo di memoria",
 			"d": "Errore di compilazione"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -436,7 +436,7 @@
 			"c": "Nell'Heap",
 			"d": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -448,7 +448,7 @@
 			"c": "Un puntatore",
 			"d": "Un indirizzo"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -460,7 +460,7 @@
 			"c": "Le variabili locali sono immagazzinate nell'Uninitialized segment",
 			"d": "Le variabili locali vengono distrutte nello stesso ordine in cui sono create"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -472,7 +472,7 @@
 			"c": "2 15",
 			"d": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -496,7 +496,7 @@
 			"c": "2 6 14",
 			"d": "2 4 9"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -508,7 +508,7 @@
 			"c": "Per riferimento e per puntatore",
 			"d": "Entrambi per valore"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Funzioni, reference, chiamate a funzioni, layout memoria"
 	},
@@ -520,7 +520,7 @@
 			"c": "public",
 			"d": "public & protected"
 		},
-		"correctAnswer": "2",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Classi"
 	},
@@ -532,7 +532,7 @@
 			"c": "Dichiarare le funzioni membro",
 			"d": "distruggere gli oggetti"
 		},
-		"correctAnswer": "1",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Classi"
 	},
@@ -544,7 +544,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Classi"
 	},
@@ -556,7 +556,7 @@
 			"c": "Public o privare o protected",
 			"d": "Solo protected"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Classi"
 	},
@@ -568,7 +568,7 @@
 			"c": "Gli oggetti di quella classe saranno sempre vuoti",
 			"d": "Il compilatore definisce un costruttore di default"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Classi"
 	},
@@ -580,7 +580,7 @@
 			"c": "A a = A(5)",
 			"d": "A a = A()"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Classi"
 	},
@@ -606,7 +606,7 @@
 			"d": "<< (Output Stream Operator)",
 			"e" : ">> (Input Stream Operator)"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -618,7 +618,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -630,7 +630,7 @@
 			"c": "int +(argument_list){}",
 			"d": "int[+](argument_list){}"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -642,7 +642,7 @@
 			"c": "Un operatore che esegue un'azione su tre operandi",
 			"d": "Un operatore che esegue un'azione su un numero qualsiasi operandi"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -666,7 +666,7 @@
 			"c": "3",
 			"d": "0"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -678,7 +678,7 @@
 			"c": "3",
 			"d": "0"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -690,7 +690,7 @@
 			"c": "bool operator< (Box b1, Box b2) { return b1.capacity < b2.capacity ? true : false; }",
 			"d": "bool operator< (Box b) { return this < b ? true : false; }"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Overloading operatori"
 	},
@@ -702,7 +702,7 @@
 			"c": "144",
 			"d": "110"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -727,7 +727,7 @@
 			"c": "0",
 			"d": "Dipende dal programma"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -739,7 +739,7 @@
 			"c": "Un array è una serie di elementi dello steso tipo in locazioni di memoria non contigue",
 			"d": "Un array è una serie di elementi di tipo diverso in locazioni di memoria contigue"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -751,7 +751,7 @@
 			"c": "p è un array di puntatori con 5 elementi",
 			"d": "La dichiarazione non è valida in C++"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -775,7 +775,7 @@
 			"c": "Errore",
 			"d": "Nessuno dei precedenti"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -787,7 +787,7 @@
 			"c": "5",
 			"d": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -799,7 +799,7 @@
 			"c": "Errore",
 			"d": "Nessuna delle precedenti."
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -811,7 +811,7 @@
 			"c": "14",
 			"d": "Errore"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -823,7 +823,7 @@
 			"c": "double* p0 = [];",
 			"d": "double* p0 = None;"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -835,7 +835,7 @@
 			"c": "Il valore di a è assegnato alla variabile b",
 			"d": "q alla fine punta alla variabile a"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -847,7 +847,7 @@
 			"c": "defg",
 			"d": "abcd"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -859,7 +859,7 @@
 			"c": "word*",
 			"d": "Non si può"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -871,7 +871,7 @@
 			"c": "Un numero senza segno",
 			"d": "Un valore null"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -895,7 +895,7 @@
 			"c": "E' possibile creare il riferimento di un riferimento",
 			"d": "Riferimento e puntatore sono la stessa cosa"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Puntatori, reference e array"
 	},
@@ -920,7 +920,7 @@
 			"d": "Nella memoria di massa",
 			"e": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -932,7 +932,7 @@
 			"c": "Assegnando al puntaotre il valore 0 dopo la chiamata a delete",
 			"d": "Assegnando al puntatore il valore nullptr dopo la chiamata a delete"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -968,7 +968,7 @@
 			"c": "Quando la classe contiene variabili statiche",
 			"d": "Quando la classe eredita le variabili e le funzioni di un'altra classe"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -980,7 +980,7 @@
 			"c": "Il distruttore della copia viene chiamato in uscita dalla funzione",
 			"d": "Il distruttore deve essere definito dall'utente perchè venga chiamato dalla copia"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1005,7 +1005,7 @@
 			"c": "Cpn l'operatore new",
 			"d": "Con l'operatore allocate"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1017,7 +1017,7 @@
 			"c": "Legge 20 valori interi dello stream input",
 			"d": "Alloca la memoria per un intero di dimensione 20 bytes"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1029,7 +1029,7 @@
 			"c": "144",
 			"d": "110"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1041,7 +1041,7 @@
 			"c": "double* p0 = []",
 			"d": "double* p0 = None"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1053,7 +1053,7 @@
 			"c": "int x = int new;",
 			"d": "int* x = new int[];"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1089,7 +1089,7 @@
 			"c": "delete []students",
 			"d": "delete students[size]"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Allocazione dinamica e deallocazione"
 	},
@@ -1113,7 +1113,7 @@
 			"c": "MyClass(MyClass &arg)",
 			"d": "MyClass(MyClass arg)"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1125,7 +1125,7 @@
 			"c": "Auto assegnamento e memory leaks",
 			"d": "Nessuno"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1177,7 +1177,7 @@
 			"c": "MyClass& MyClass::operator=(MyClass c)",
 			"d": "MyClass& MyClass::operator=(MyClass&& c)"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1189,7 +1189,7 @@
 			"c": "fun1->copy assignment <br>fun2->move assignment <br>fun3->move constructor <br>fun4->copy constructor",
 			"d": "fun1->copy assignment <br>fun2->move assignment <br>fun3->copy destructor <br>fun4->copy constructor"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1202,7 +1202,7 @@
 			"d": "fun4",
 			"e": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1214,7 +1214,7 @@
 			"c": "Quando si vuole una copia membro-a-membro tra due oggetti della stessa classe",
 			"d": "Solamente quando la classe ha variabili membro private"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1226,7 +1226,7 @@
 			"c": "Assignment operator called <br> Copy constructor called",
 			"d": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1238,7 +1238,7 @@
 			"c": "Prima stringa <br> Prima stringa <br> Prima stringa <br> Seconda stringa",
 			"d": "Errore"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1250,7 +1250,7 @@
 			"c": "Costruttore di copia",
 			"d": "Nessuno delle precedenti"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1263,7 +1263,7 @@
 			"d": "Tramite puntatore",
 			"e": "Con la modalità che si desidera"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1275,7 +1275,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1287,7 +1287,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1299,7 +1299,7 @@
 			"c": "int",
 			"d": "Lo stesso tipo della classe"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Classi inizializzazione, copia e spostamento"
 	},
@@ -1324,7 +1324,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1336,7 +1336,7 @@
 			"c": "1 <br> Errore",
 			"d": "Errore"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1349,7 +1349,7 @@
 			"d": "Niente",
 			"e": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1361,7 +1361,7 @@
 			"c": "Una funzione template può accettare un solo parametro mentre una funzione normale ne può accettare più di uno",
 			"d": "Una funzione template può accettare più di un parametro mentre una funzione normale ne può accettare uno solo"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1373,7 +1373,7 @@
 			"c": "x = 1 count = 0 <br>x = 1 count = 1 <br>x = 1.1 count = 2",
 			"d": "x = 1 count = 0 <br>x = 1 count = 1 <br>x = 1.1 count = 0"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1385,7 +1385,7 @@
 			"c": "Errore in tutte le dichiarazione di cout poiché il tipo dei dati non è definito",
 			"d": "Error nell’ultimo cout poiché il tipo dei dati è ambiguo"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1397,7 +1397,7 @@
 			"c": "Quando i parametri template possono essere classi definite dall’utente",
 			"d": "Mai, i tipi template possono sempre essere dedotti dagli argomenti della funzione"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1409,7 +1409,7 @@
 			"c": "SI, ma solo al comncetto di polimorfismo a tempo di compilazione",
 			"d": "SI, ma solo al comncetto di polimorfismo a tempo di esecuzione"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1421,7 +1421,7 @@
 			"c": "È chiamata solo quando l'argomento è di tipo int",
 			"d": "Genera errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1434,7 +1434,7 @@
 			"d": "fun4",
 			"e": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Template"
 	},
@@ -1458,7 +1458,7 @@
 			"c": "git clone",
 			"d": "git commit"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1470,7 +1470,7 @@
 			"c": "gitignore.txt",
 			"d": "git.ignore"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1482,7 +1482,7 @@
 			"c": "git add- *.cpp",
 			"d": "Non é possibile filtrare i file da caricare nella staging area sulla base dell'estensione"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1507,7 +1507,7 @@
 			"c": "git upload",
 			"d": "git status"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1519,7 +1519,7 @@
 			"c": "git diff",
 			"d": "git pull"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1531,7 +1531,7 @@
 			"c": "git init",
 			"d": "git push"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1543,7 +1543,7 @@
 			"c": "git commit",
 			"d": "git commit -a"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1555,7 +1555,7 @@
 			"c": "git commit “I am coding”",
 			"d": "git commit -m “I am coding”"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1579,7 +1579,7 @@
 			"c": "email e password",
 			"d": "username e indirizzo IP"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1591,7 +1591,7 @@
 			"c": "git init",
 			"d": "git start"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "GIT"
 	},
@@ -1603,7 +1603,7 @@
 			"c": "std::vector<int> vecOfInts;",
 			"d": "std::vector(int) vecOfInts;"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "STL"
 	},
@@ -1652,7 +1652,7 @@
 			"d": "60",
 			"e": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "STL"
 	},
@@ -1664,7 +1664,7 @@
 			"c": "Liste",
 			"d": "Array"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "STL"
 	},
@@ -1697,7 +1697,7 @@
 			"c": "Un componente di STL utilizzato per chiamare efficientemente le funzioni",
 			"d": "Un componente di STL utilizzato per creare classi template"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "STL"
 	},
@@ -1709,7 +1709,7 @@
 			"c": "[]",
 			"d": "()"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "STL"
 	},
@@ -1746,7 +1746,7 @@
 			"c": "L'operazione di overloading di classi intere;",
 			"d": "La possibilità di avere classi con lo stesso nome"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1758,7 +1758,7 @@
 			"c": "A's Constructor <br> present inside the class B",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1770,7 +1770,7 @@
 			"c": "Niente",
 			"d": "Errore"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1782,7 +1782,7 @@
 			"c": "Ninte",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1794,7 +1794,7 @@
 			"c": "Errore dovuto alla linea [Derived *dp = new Base;]",
 			"d": "Nessuna delle precedenti"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1806,7 +1806,7 @@
 			"c": "This is Base class <br> This is Base class",
 			"d": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1818,7 +1818,7 @@
 			"c": "public",
 			"d": "sia private che protected"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1830,7 +1830,7 @@
 			"c": "delete",
 			"d": "null"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1856,7 +1856,7 @@
 			"c": "1515",
 			"d": "5110"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1868,7 +1868,7 @@
 			"c": "Una funzione della classe derivata che accade ai dati membro della classe base",
 			"d": "Una funzione dichiarata nella classe base e di cui viene effettuato l'override nella classe derivata"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1880,7 +1880,7 @@
 			"c": "Hello this is class A <br> Hello this is class B",
 			"d": "Errore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1892,7 +1892,7 @@
 			"c": "Una funzione virtuale che non può essere implementata nella classe derivata",
 			"d": "Ogni funzione esplicitamente dichiarata come virtual"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1904,7 +1904,7 @@
 			"c": "Polimorfismo a tempo di esecuzione",
 			"d": "Astrazione"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Ereditarietà"
 	},
@@ -1916,7 +1916,7 @@
 			"c": "Una funzione che in caso di fallimento non genera memory leak",
 			"d": "Una funzione che in caso di fallimento non interrompe il programma"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Gestione delle risorse"
 	},
@@ -1940,7 +1940,7 @@
 			"c": "In caso di fallimento, SG non modifica i valori osservabili, mentre BG può",
 			"d": "In caso di fallimento, SG non genera memory leak, mentre BG può"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Gestione delle risorse"
 	},
@@ -1952,7 +1952,7 @@
 			"c": "catch(...)",
 			"d": "catch(Exception)"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Gestione delle risorse"
 	},
@@ -1964,7 +1964,7 @@
 			"c": "Exception occurred: exiting",
 			"d": "Errore"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Gestione delle risorse"
 	},
@@ -1976,7 +1976,7 @@
 			"c": "try",
 			"d": "handlers"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Gestione delle risorse"
 	},
@@ -2000,7 +2000,7 @@
 			"c": "Si, a causa della variabile h",
 			"d": "No, non ha memory leak"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2014,7 +2014,7 @@
 			"e": "Niente",
 			"f": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2027,7 +2027,7 @@
 			"d": "Non visualizza niente",
 			"e": "Nessun dei precedenti"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2039,7 +2039,7 @@
 			"c": "Non può contenere uno std::vector",
 			"d": "Libera la memoria in caso di uscita dello scope a causa di eccezione"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2051,7 +2051,7 @@
 			"c": "E' un puntatore che punta ad una memoria contenente un oggetto che non è dello stesso tipo del puntatore",
 			"d": "E' un tipo di smart pointer"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2094,7 +2094,7 @@
 			"d": "Niente",
 			"e": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "e",
+		"correctAnswer": ["e"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2119,7 +2119,7 @@
 			"c": "std::unique_ptr<int[]> p ( new int(10) );",
 			"d": "Non è possibile utilizzare lo std::unique_ptr<> per creare un array"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2133,7 +2133,7 @@
 			"e": "Niente",
 			"f": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Smart pointers"
 	},
@@ -2159,7 +2159,7 @@
 			"e": "&&",
 			"f": "Non è possibile catturare variabili per riferimento, solo per valore"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2195,7 +2195,7 @@
 			"c": "Niente",
 			"d": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2207,7 +2207,7 @@
 			"c": "Tramite posizione",
 			"d": "Tramite valore"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2220,7 +2220,7 @@
 			"d": "Niente",
 			"e": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2233,7 +2233,7 @@
 			"d": "Niente",
 			"e": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "c",
+		"correctAnswer": ["c"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2245,7 +2245,7 @@
 			"c": "40",
 			"d": "55"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2269,7 +2269,7 @@
 			"c": "30",
 			"d": "40"
 		},
-		"correctAnswer": "b",
+		"correctAnswer": ["b"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2282,7 +2282,7 @@
 			"d": "10 8 8",
 			"e": "Errore in compilazione o esecuzione"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2296,7 +2296,7 @@
 			"e": "operator[]",
 			"f": "operator*"
 		},
-		"correctAnswer": "d",
+		"correctAnswer": ["d"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
@@ -2320,7 +2320,7 @@
 			"c": "Una tecnica che consente di scrivere funzioni che possono essere chiamate all'interno di un solo scope",
 			"d": "Una tecnica che consente di scriverefunzioni inline che necessitino di parametri"
 		},
-		"correctAnswer": "a",
+		"correctAnswer": ["a"],
 		"reason":"",
 		"category": "Algoritmi STL"
 	},
