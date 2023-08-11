@@ -155,41 +155,36 @@
 			let count = 0;
 			
 			fetch("answers.json")
-        .then(res => res.json())
-        .then(data => {
-            auxSet.forEach(i => {
-                const selectedInputs = document.querySelectorAll("input[name='" + i + "']:checked");
-                if (selectedInputs.length === 0) {
-                    // L'utente non ha selezionato alcuna risposta
-                } else {
-                    const selectedValues = Array.from(selectedInputs).map(input => input.value);
-                    const correctAnswers = data[i].correctAnswer;
-                    
-                    const isAllCorrect = correctAnswers.every(correctAnswer => selectedValues.includes(correctAnswer));
-                    
-                    if (isAllCorrect) {
-                        done.push(i);
-                        count++;
-
-                        selectedInputs.forEach(input => {
-                            input.nextElementSibling.classList.add("correct-answer");
-                        });
-                    } else {
-                        selectedValues.forEach(value => {
-                            const elementId = i + value;
-                            document.getElementById(elementId).innerHTML += "<tab> &#10060";
-                            document.getElementById(elementId).classList.add("wrong-answer");
-                        });
-                        
-                        correctAnswers.forEach(correctAnswer => {
-                            const radio = document.getElementById(i + correctAnswer);
-                            radio.innerHTML += "<tab> &#9989";
-                            radio.classList.add("alert");
-                            radio.classList.add("alert-success");
-                        });
-                    }
-                }
-            });
+				.then(res => res.json())
+				.then(data => {
+					auxSet.forEach(i => {
+						const selectedInputs = document.querySelectorAll("input[name='" + i + "']:checked");
+						if (selectedInputs.length === 0) {
+							// L'utente non ha selezionato alcuna risposta
+						} else {
+							const selectedValues = Array.from(selectedInputs).map(input => input.value);
+							const correctAnswers = data[i].correctAnswer;
+							
+							const isAllCorrect = correctAnswers.every(correctAnswer => selectedValues.includes(correctAnswer));
+							
+							if (isAllCorrect) {
+								done.push(i);
+								count++;
+							} else {
+								selectedValues.forEach(value => {
+									const elementId = i + value;
+									document.getElementById(elementId).innerHTML += "<tab> &#10060";
+								});
+							}
+							
+							correctAnswers.forEach(correctAnswer => {
+								const radio = document.getElementById(i + correctAnswer);
+								radio.innerHTML += "<tab> &#9989";
+								radio.classList.add("alert");
+								radio.classList.add("alert-success");
+							});
+						}
+					});
 					
 					let ris = "";
 					if (count > 17) {
@@ -205,7 +200,6 @@
 					sessionStorage.setItem('done', JSON.stringify(done));
 				});
 		}		
-		
 	</script>
 
     <footer class="py-3">
