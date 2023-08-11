@@ -152,15 +152,9 @@
 			if (sessionStorage.getItem('done') == null) {
 				sessionStorage.setItem('done', JSON.stringify([]));
 			}
-			
+		
 			let done = JSON.parse(sessionStorage.getItem('done'));
 			let count = 0;
-		
-			// Recupera le risposte corrette da correctAnswers
-			let correctAnswers = [];
-			data.forEach(element => {
-				correctAnswers.push(element.correctAnswer);
-			});
 		
 			fetch("answers_LabDiProgram.json")
 				.then(res => res.json())
@@ -171,9 +165,12 @@
 							// L'utente non ha selezionato alcuna risposta
 						} else {
 							const selectedValues = Array.from(selectedCheckboxes).map(checkbox => checkbox.value);
-		
-							const isAllCorrect = selectedValues.every(selectedValue => correctAnswers[i].includes(selectedValue));
 							
+							// Dichiarazione dell'array correctAnswers
+							let correctAnswers = data[i].correctAnswer;
+		
+							const isAllCorrect = selectedValues.every(selectedValue => correctAnswers.includes(selectedValue));
+		
 							if (isAllCorrect) {
 								done.push(i);
 								count++;
@@ -184,14 +181,15 @@
 								});
 							}
 							
-							correctAnswers[i].forEach(correctAnswer => {
-								const radio = document.getElementById(i + correctAnswer);
-								radio.innerHTML += "<tab> &#9989";
-								radio.classList.add("alert");
-								radio.classList.add("alert-success");
+							correctAnswers.forEach(correctAnswer => {
+								const checkboxLabel = document.getElementById(i + correctAnswer);
+								checkboxLabel.innerHTML += "<tab> &#9989";
+								checkboxLabel.classList.add("alert");
+								checkboxLabel.classList.add("alert-success");
 							});
 						}
 					});
+		
 					
 					let ris = "";
 					if (count > 17) {
